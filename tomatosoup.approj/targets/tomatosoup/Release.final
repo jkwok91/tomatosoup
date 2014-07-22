@@ -1,0 +1,766 @@
+{
+    "assets": [
+        {
+            "asset": "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
+            "target": "ResourceRules.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/Settings.png", 
+            "target": "Settings.png"
+        }, 
+        {
+            "asset": "tomatosoup57x57.png", 
+            "target": "tomatosoup57x57.png"
+        }, 
+        {
+            "asset": "tomatosoup144x144.png", 
+            "target": "tomatosoup144x144.png"
+        }, 
+        {
+            "asset": "tomatosoup76x76.png", 
+            "target": "tomatosoup76x76.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad@2x.png", 
+            "target": "iPad@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad.png", 
+            "target": "iPad.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad-old@2x.png", 
+            "target": "iPad-old@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone-old@2x.png", 
+            "target": "iPhone-old@2x.png"
+        }, 
+        {
+            "asset": "tomatosoup154x154.png", 
+            "target": "tomatosoup154x154.png"
+        }, 
+        {
+            "asset": "tomatosoup114x114.png", 
+            "target": "tomatosoup114x114.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/configCocos2d.plist", 
+            "target": "Published-iOS/configCocos2d.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/fileLookup.plist", 
+            "target": "Published-iOS/fileLookup.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/GameOverScene.ccbi", 
+            "target": "Published-iOS/GameOverScene.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/MainScene.ccbi", 
+            "target": "Published-iOS/MainScene.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/spriteFrameFileList.plist", 
+            "target": "Published-iOS/spriteFrameFileList.plist"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Strings.ccbLang", 
+            "target": "Published-iOS/Strings.ccbLang"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/TutorialScene.ccbi", 
+            "target": "Published-iOS/TutorialScene.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phone/butter.png", 
+            "target": "Published-iOS/Assets/resources-phone/butter.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phone/moldyStrawberry.png", 
+            "target": "Published-iOS/Assets/resources-phone/moldyStrawberry.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phone/pepper.png", 
+            "target": "Published-iOS/Assets/resources-phone/pepper.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phone/pot.png", 
+            "target": "Published-iOS/Assets/resources-phone/pot.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phone/salt.png", 
+            "target": "Published-iOS/Assets/resources-phone/salt.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phone/sugar.png", 
+            "target": "Published-iOS/Assets/resources-phone/sugar.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phone/tomato.png", 
+            "target": "Published-iOS/Assets/resources-phone/tomato.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phonehd/butter.png", 
+            "target": "Published-iOS/Assets/resources-phonehd/butter.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phonehd/moldyStrawberry.png", 
+            "target": "Published-iOS/Assets/resources-phonehd/moldyStrawberry.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phonehd/pepper.png", 
+            "target": "Published-iOS/Assets/resources-phonehd/pepper.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phonehd/pot.png", 
+            "target": "Published-iOS/Assets/resources-phonehd/pot.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phonehd/salt.png", 
+            "target": "Published-iOS/Assets/resources-phonehd/salt.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phonehd/sugar.png", 
+            "target": "Published-iOS/Assets/resources-phonehd/sugar.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-phonehd/tomato.png", 
+            "target": "Published-iOS/Assets/resources-phonehd/tomato.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablet/butter.png", 
+            "target": "Published-iOS/Assets/resources-tablet/butter.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablet/moldyStrawberry.png", 
+            "target": "Published-iOS/Assets/resources-tablet/moldyStrawberry.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablet/pepper.png", 
+            "target": "Published-iOS/Assets/resources-tablet/pepper.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablet/pot.png", 
+            "target": "Published-iOS/Assets/resources-tablet/pot.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablet/salt.png", 
+            "target": "Published-iOS/Assets/resources-tablet/salt.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablet/sugar.png", 
+            "target": "Published-iOS/Assets/resources-tablet/sugar.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablet/tomato.png", 
+            "target": "Published-iOS/Assets/resources-tablet/tomato.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablethd/butter.png", 
+            "target": "Published-iOS/Assets/resources-tablethd/butter.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablethd/moldyStrawberry.png", 
+            "target": "Published-iOS/Assets/resources-tablethd/moldyStrawberry.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablethd/pepper.png", 
+            "target": "Published-iOS/Assets/resources-tablethd/pepper.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablethd/pot.png", 
+            "target": "Published-iOS/Assets/resources-tablethd/pot.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablethd/salt.png", 
+            "target": "Published-iOS/Assets/resources-tablethd/salt.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablethd/sugar.png", 
+            "target": "Published-iOS/Assets/resources-tablethd/sugar.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Assets/resources-tablethd/tomato.png", 
+            "target": "Published-iOS/Assets/resources-tablethd/tomato.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbButtonHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbButtonHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbButtonNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbButtonNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleFire.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleFire.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleMagic.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleMagic.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleSmoke.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleSmoke.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleSnow.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleSnow.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbParticleStars.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbParticleStars.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderBgHighlighted.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderBgHighlighted.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderBgNormal.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderBgNormal.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderHandle.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderHandle.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbTextField.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/ccbTextField.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem-1x.ccbi", 
+            "target": "Published-iOS/gems/gem-1x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem0x.ccbi", 
+            "target": "Published-iOS/gems/gem0x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem1-16x.ccbi", 
+            "target": "Published-iOS/gems/gem1-16x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem1-4x.ccbi", 
+            "target": "Published-iOS/gems/gem1-4x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem1-8x.ccbi", 
+            "target": "Published-iOS/gems/gem1-8x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem1x.ccbi", 
+            "target": "Published-iOS/gems/gem1x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem1x2.ccbi", 
+            "target": "Published-iOS/gems/gem1x2.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem1x3.ccbi", 
+            "target": "Published-iOS/gems/gem1x3.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem2x.ccbi", 
+            "target": "Published-iOS/gems/gem2x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem2x2.ccbi", 
+            "target": "Published-iOS/gems/gem2x2.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/gems/gem4x.ccbi", 
+            "target": "Published-iOS/gems/gem4x.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/Settings@2x.png", 
+            "target": "Settings@2x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone-old.png", 
+            "target": "iPhone-old.png"
+        }, 
+        {
+            "asset": "tomatosoup120x120.png", 
+            "target": "tomatosoup120x120.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone.png", 
+            "target": "iPhone.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPhone@2x.png", 
+            "target": "iPhone@2x.png"
+        }, 
+        {
+            "asset": "tomatosoup72x72.png", 
+            "target": "tomatosoup72x72.png"
+        }, 
+        {
+            "asset": "Source/Resources/Icons/iPad-old.png", 
+            "target": "iPad-old.png"
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "tomatosoup", 
+        "APPLICATION_IDENTIFIER": "com.apportable.tomatosoup", 
+        "APPLICATION_NAME": "tomatosoup", 
+        "FEATURES": [
+            "portrait", 
+            "opengles2"
+        ], 
+        "ICU_CONFIG": "normal", 
+        "LONG_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "tomatosoup", 
+            "PRODUCT_NAME": "tomatosoup"
+        }
+    }, 
+    "defines": {
+        "NDEBUG": 1, 
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000
+    }, 
+    "deps": [
+        "UIKit", 
+        "GLKit", 
+        "QuartzCore", 
+        "OpenGLES", 
+        "OpenAL", 
+        "AudioToolbox", 
+        "AVFoundation", 
+        "UIKit", 
+        "Foundation", 
+        "CoreGraphics", 
+        "CoreText"
+    ], 
+    "flags": [
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wno-deprecated-declarations", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "tomatosoup-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "tomatosoup-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "tomatosoup-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "tomatosoup-project-headers.hmap", 
+            "hmap": {
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Source/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "DoubleDrop.h": {
+                    "key": "DoubleDrop.h", 
+                    "prefix": "./", 
+                    "suffix": "DoubleDrop.h"
+                }, 
+                "Drop.h": {
+                    "key": "Drop.h", 
+                    "prefix": "./", 
+                    "suffix": "Drop.h"
+                }, 
+                "FractionalDrop.h": {
+                    "key": "FractionalDrop.h", 
+                    "prefix": "./", 
+                    "suffix": "FractionalDrop.h"
+                }, 
+                "GameOverScene.h": {
+                    "key": "GameOverScene.h", 
+                    "prefix": "./", 
+                    "suffix": "GameOverScene.h"
+                }, 
+                "MainScene.h": {
+                    "key": "MainScene.h", 
+                    "prefix": "./", 
+                    "suffix": "MainScene.h"
+                }, 
+                "MoldyDrop.h": {
+                    "key": "MoldyDrop.h", 
+                    "prefix": "./", 
+                    "suffix": "MoldyDrop.h"
+                }, 
+                "NeutralDrop.h": {
+                    "key": "NeutralDrop.h", 
+                    "prefix": "./", 
+                    "suffix": "NeutralDrop.h"
+                }, 
+                "Prefix.pch": {
+                    "key": "Prefix.pch", 
+                    "prefix": "Source/", 
+                    "suffix": "Prefix.pch"
+                }, 
+                "ResetDrop.h": {
+                    "key": "ResetDrop.h", 
+                    "prefix": "./", 
+                    "suffix": "ResetDrop.h"
+                }, 
+                "TutorialScene.h": {
+                    "key": "TutorialScene.h", 
+                    "prefix": "./", 
+                    "suffix": "TutorialScene.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/kazmath/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Support", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms/iOS", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d/Platforms/Mac", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/Chipmunk/objectivec/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/Chipmunk/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d-ui", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/cocos2d-ui/CCBReader", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Actions", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/AudioTrack", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/OpenAL", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Session", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "Source/libs/cocos2d-iphone/external/ObjectAL/Support", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/DERIVED_FILE_DIR", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./Source/Resources/Info.plist"
+    ], 
+    "java_libs": [], 
+    "java_res_dirs": [], 
+    "java_sourcepaths": [], 
+    "java_sources": [], 
+    "libs": [
+        "z", 
+        "sqlite3"
+    ], 
+    "link_flags": [], 
+    "modules": [
+        {
+            "build_cwd": "Source/libs/cocos2d-iphone", 
+            "project": "Chipmunk7-ios", 
+            "project_config": "Release", 
+            "target": "ObjectiveChipmunk-iPhone"
+        }, 
+        {
+            "build_cwd": "Source/libs/cocos2d-iphone", 
+            "project": "cocos2d-ios", 
+            "project_config": "Release", 
+            "target": "cocos2d"
+        }
+    ], 
+    "pchs": [
+        "./Source/Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "DoubleDrop.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Drop.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "FractionalDrop.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "GameOverScene.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "MainScene.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "MoldyDrop.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "NeutralDrop.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "ResetDrop.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/main.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "TutorialScene.m"
+        }
+    ], 
+    "storyboards": [], 
+    "type": "app", 
+    "version": "3", 
+    "xcdatamodels": [], 
+    "xcode_project": "tomatosoup.xcodeproj", 
+    "xibs": []
+}
