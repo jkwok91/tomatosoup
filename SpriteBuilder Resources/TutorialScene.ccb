@@ -71,10 +71,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>163</real>
+							<real>0.5</real>
 							<real>432</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -245,6 +245,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1837,10 +1839,10 @@ This does not belong in tomato soup.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>160.00003051757812</real>
+							<real>0.50000011920928955</real>
 							<real>124.00001525878906</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
