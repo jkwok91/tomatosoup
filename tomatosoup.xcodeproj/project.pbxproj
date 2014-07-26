@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C899E8119831881001ABC40 /* TripleDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C899E8019831881001ABC40 /* TripleDrop.m */; };
-		4CD1C37A197E206800E14FE8 /* DoubleDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C36B197E206800E14FE8 /* DoubleDrop.m */; };
 		4CD1C37B197E206800E14FE8 /* Drop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C36D197E206800E14FE8 /* Drop.m */; };
 		4CD1C37D197E206800E14FE8 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C371197E206800E14FE8 /* GameOverScene.m */; };
-		4CD1C37E197E206800E14FE8 /* MoldyDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C373197E206800E14FE8 /* MoldyDrop.m */; };
-		4CD1C37F197E206800E14FE8 /* NeutralDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C375197E206800E14FE8 /* NeutralDrop.m */; };
-		4CD1C380197E206800E14FE8 /* ResetDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C377197E206800E14FE8 /* ResetDrop.m */; };
 		4CD1C381197E206800E14FE8 /* TutorialScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C379197E206800E14FE8 /* TutorialScene.m */; };
 		4CD1C385197E21C100E14FE8 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C384197E21C000E14FE8 /* MainScene.m */; };
 		4CD1C38F197E229E00E14FE8 /* tomatosoup57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD1C388197E229D00E14FE8 /* tomatosoup57x57.png */; };
@@ -67,20 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C899E7F19831881001ABC40 /* TripleDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripleDrop.h; sourceTree = "<group>"; };
-		4C899E8019831881001ABC40 /* TripleDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripleDrop.m; sourceTree = "<group>"; };
-		4CD1C36A197E206800E14FE8 /* DoubleDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleDrop.h; sourceTree = "<group>"; };
-		4CD1C36B197E206800E14FE8 /* DoubleDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleDrop.m; sourceTree = "<group>"; };
 		4CD1C36C197E206800E14FE8 /* Drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drop.h; sourceTree = "<group>"; };
 		4CD1C36D197E206800E14FE8 /* Drop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drop.m; sourceTree = "<group>"; };
 		4CD1C370197E206800E14FE8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
 		4CD1C371197E206800E14FE8 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
-		4CD1C372197E206800E14FE8 /* MoldyDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoldyDrop.h; sourceTree = "<group>"; };
-		4CD1C373197E206800E14FE8 /* MoldyDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoldyDrop.m; sourceTree = "<group>"; };
-		4CD1C374197E206800E14FE8 /* NeutralDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeutralDrop.h; sourceTree = "<group>"; };
-		4CD1C375197E206800E14FE8 /* NeutralDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeutralDrop.m; sourceTree = "<group>"; };
-		4CD1C376197E206800E14FE8 /* ResetDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetDrop.h; sourceTree = "<group>"; };
-		4CD1C377197E206800E14FE8 /* ResetDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetDrop.m; sourceTree = "<group>"; };
 		4CD1C378197E206800E14FE8 /* TutorialScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialScene.h; sourceTree = "<group>"; };
 		4CD1C379197E206800E14FE8 /* TutorialScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialScene.m; sourceTree = "<group>"; };
 		4CD1C383197E21C000E14FE8 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
@@ -159,18 +144,8 @@
 				4CD1C384197E21C000E14FE8 /* MainScene.m */,
 				4CD1C36C197E206800E14FE8 /* Drop.h */,
 				4CD1C36D197E206800E14FE8 /* Drop.m */,
-				4CD1C374197E206800E14FE8 /* NeutralDrop.h */,
-				4CD1C375197E206800E14FE8 /* NeutralDrop.m */,
-				4CD1C36A197E206800E14FE8 /* DoubleDrop.h */,
-				4CD1C36B197E206800E14FE8 /* DoubleDrop.m */,
-				4C899E7F19831881001ABC40 /* TripleDrop.h */,
-				4C899E8019831881001ABC40 /* TripleDrop.m */,
 				4CD1C370197E206800E14FE8 /* GameOverScene.h */,
 				4CD1C371197E206800E14FE8 /* GameOverScene.m */,
-				4CD1C372197E206800E14FE8 /* MoldyDrop.h */,
-				4CD1C373197E206800E14FE8 /* MoldyDrop.m */,
-				4CD1C376197E206800E14FE8 /* ResetDrop.h */,
-				4CD1C377197E206800E14FE8 /* ResetDrop.m */,
 				4CD1C378197E206800E14FE8 /* TutorialScene.h */,
 				4CD1C379197E206800E14FE8 /* TutorialScene.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
@@ -392,16 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD1C37E197E206800E14FE8 /* MoldyDrop.m in Sources */,
-				4C899E8119831881001ABC40 /* TripleDrop.m in Sources */,
 				4CD1C37D197E206800E14FE8 /* GameOverScene.m in Sources */,
 				4CD1C381197E206800E14FE8 /* TutorialScene.m in Sources */,
 				4CD1C37B197E206800E14FE8 /* Drop.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
-				4CD1C380197E206800E14FE8 /* ResetDrop.m in Sources */,
-				4CD1C37F197E206800E14FE8 /* NeutralDrop.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
-				4CD1C37A197E206800E14FE8 /* DoubleDrop.m in Sources */,
 				4CD1C385197E21C100E14FE8 /* MainScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

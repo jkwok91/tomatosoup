@@ -11,6 +11,6 @@
 @interface MainScene : CCNode
 
 @property (assign) int timeLeft;
-@property (assign) float points;
+@property (assign) int points;
 
 @end

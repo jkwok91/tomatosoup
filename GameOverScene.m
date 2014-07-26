@@ -25,9 +25,15 @@
         resultString = @"Your soup is not edible";
         successString = @"FAILED";
         _creditsButton.visible = NO;
-    } else if (self.finalScore < 2) {
-        resultString = @"Your soup is just tomato water";
+    } else if (self.finalScore%2 != 0) {
+        resultString = @"Your soup lacks tomatoes!";
         successString = @"FAILED";
+    } else if (self.finalScore%3 != 0) {
+        resultString = @"Your soup is just tomato water!";
+        successString = @"FAILED";
+    } else if (self.finalScore%5 != 0) {
+        resultString = @"Your soup lacks a certain je ne sais quoi...";
+        successString = @"NEEDS IMPROVEMENT";
     } else {
         resultString = @"It appears that you made soup! Yum";
         _creditsButton.visible = YES;

@@ -10,11 +10,11 @@
 #import "MainScene.h"
 #import "Drop.h"
 #import "GameOverScene.h"
-#import "MoldyDrop.h"
-#import "ResetDrop.h"
-#import "NeutralDrop.h"
-#import "DoubleDrop.h"
-#import "TripleDrop.h"
+//#import "MoldyDrop.h"
+//#import "ResetDrop.h"
+//#import "NeutralDrop.h"
+//#import "DoubleDrop.h"
+//#import "TripleDrop.h"
 
 @implementation MainScene {
     NSArray *rotten; // nasty food
@@ -156,25 +156,30 @@
     if (randomizer < 18) { // 45% chance of creating a neutral drop
         //NSLog(@"generating a neutr drop");
         fromThese = [currentRecipe valueForKey:@"bases"];
-        d = (NeutralDrop *)[self makeDrop:fromThese];
+        d = [self makeDrop:fromThese];
+        d.multiplier = 2;
     }
     else if (randomizer < 20) { // 5% chance of creating a double drop
         //NSLog(@"generating a doub drop");
         fromThese = [currentRecipe valueForKey:@"seasonings"];
-        d = (DoubleDrop *)[self makeDrop:fromThese];
+        d = [self makeDrop:fromThese];
+        d.multiplier = 3;
     }
     else if (randomizer < 21) { // 2.5% chance of creating a triple drop
         //NSLog(@"generating a trip drop");
         fromThese = [currentRecipe valueForKey:@"extras"];
-        d = (TripleDrop *)[self makeDrop:fromThese];
+        d = [self makeDrop:fromThese];
+        d.multiplier = 5;
     }
     else if (randomizer < 39) { // 45% chance of creating a moldy drop
         //NSLog(@"generating a moldy drop");
-        d = (MoldyDrop *)[self makeDrop:rotten];
+        d = [self makeDrop:rotten];
+        d.multiplier = -1;
     }
     else { // 2.5% chance of creating a reset drop
         //NSLog(@"generating a reset drop");
-        d = (ResetDrop *)[self makeDrop:[currentRecipe valueForKey:@"reset"]];
+        d = [self makeDrop:[currentRecipe valueForKey:@"reset"]];
+        d.multiplier = 0;
     }
     return d;
 }
@@ -191,7 +196,7 @@
     // decrement timer
     
     // view score
-    _scoreLabel.string = [NSString stringWithFormat:@"%f", self.points];
+    _scoreLabel.string = [NSString stringWithFormat:@"%i", self.points];
     
     // check which drops have left the screen / generate new ones at top of screen
     for (int i = [_drops count]-1; i >= 0; i--) {
