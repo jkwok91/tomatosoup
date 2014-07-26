@@ -11,5 +11,10 @@
 @interface Drop : CCNode
 
 @property (assign) float multiplier;
+@property (nonatomic,strong) NSString *fileName;
+@property (assign) int bbWidth;
+@property (assign) int bbHeight;
+
+- (id)initWithName:(NSString *)name andW:(int)w andH:(int)h;
 
 @end

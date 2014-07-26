@@ -1,19 +1,19 @@
 //
-//  FractionalDrop.m
-//  bling
+//  TripleDrop.m
+//  tomatosoup
 //
-//  Created by Jessica Kwok on 7/21/14.
+//  Created by Jessica Kwok on 7/25/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "FractionalDrop.h"
+#import "TripleDrop.h"
 
-@implementation FractionalDrop
+@implementation TripleDrop
 
 - (id)init {
     if (self = [super init]) {
         // init stuff
-        self.multiplier = 0.25;
+        self.multiplier = 3;
     }
     return self;
 }
