@@ -10,6 +10,7 @@
 
 @interface GameOverScene : CCScene
 
-@property (nonatomic,assign) int finalScore;
+@property (nonatomic,strong) NSString *recipe;
+@property (assign) int finalScore;
 
 @end

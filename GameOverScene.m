@@ -22,23 +22,29 @@
     NSString *resultString;
     NSString *successString = @"SUCCESS";
     if (self.finalScore < 0) {
-        resultString = @"Your soup is not edible";
+        resultString = @"Your %@ is not edible";
         successString = @"FAILED";
         _creditsButton.visible = NO;
     } else if (self.finalScore%2 != 0) {
-        resultString = @"Your soup lacks tomatoes!";
+        resultString = @"Your %@ lacks tomatoes!";
         successString = @"FAILED";
     } else if (self.finalScore%3 != 0) {
-        resultString = @"Your soup is just tomato water!";
+        resultString = @"Your %@ is just tomato water!"; // need to change out some of these statements
         successString = @"FAILED";
     } else if (self.finalScore%5 != 0) {
-        resultString = @"Your soup lacks a certain je ne sais quoi...";
+        resultString = @"Your %@ lacks a certain je ne sais quoi...";
         successString = @"NEEDS IMPROVEMENT";
+    } else if (self.finalScore <= 30000) {
+        resultString = @"It appears that you made %@! Yum";
+        _creditsButton.visible = YES;
+    } else if (self.finalScore <= 300000) {
+        resultString = @"This %@ is amazing! And there was enough for both of us!";
+        _creditsButton.visible = YES;
     } else {
-        resultString = @"It appears that you made soup! Yum";
+        resultString = @"You're the god of %@.";
         _creditsButton.visible = YES;
     }
-    _resultLabel.string = resultString;
+    _resultLabel.string = [NSString stringWithFormat:resultString,self.recipe];
     _successLabel.string = successString;
 }
 

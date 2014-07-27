@@ -316,7 +316,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>Sample Text</string>
+							<string>YOU’RE AWESOME!</string>
 							<false/>
 						</array>
 					</dict>
@@ -452,6 +452,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -568,7 +570,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Make more soup</string>
+							<string>Make more food</string>
 							<false/>
 						</array>
 					</dict>
@@ -1327,8 +1329,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

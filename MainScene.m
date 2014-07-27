@@ -10,24 +10,25 @@
 #import "MainScene.h"
 #import "Drop.h"
 #import "GameOverScene.h"
-//#import "MoldyDrop.h"
-//#import "ResetDrop.h"
-//#import "NeutralDrop.h"
-//#import "DoubleDrop.h"
-//#import "TripleDrop.h"
+
+static int course = 0;
 
 @implementation MainScene {
     NSArray *rotten; // nasty food
     NSArray *cookbook;
     // which recipe is being made?
-    int _currentRecipe;
+    NSString *_recipeName;
+    NSDictionary *_currentRecipe;
     // array to keep track of what drops are on screen
     NSMutableArray *_drops;
     // physics
     CCPhysicsNode *_physicsNode;
+    // what am i making
+    CCLabelTTF *_statusLabel;
     // keep track of score
     CCLabelTTF *_scoreLabel;
-    // later: also change bg color according to score-- with a transition
+    // time left
+    float _timeLeft;
 }
 
 - (id)init {
@@ -40,6 +41,10 @@
                                 @"bbw":[NSNumber numberWithInt:60],
                                 @"bbh":[NSNumber numberWithInt:65]
                                 };
+        NSDictionary *oregano = @{@"name":@"oregano",
+                                  @"bbw":[NSNumber numberWithInt:6000],
+                                  @"bbh":[NSNumber numberWithInt:65000]
+                                  };
         NSDictionary *salt = @{@"name":@"salt",
                                @"bbw":[NSNumber numberWithInt:60],
                                @"bbh":[NSNumber numberWithInt:50]
@@ -48,14 +53,26 @@
                                  @"bbw":[NSNumber numberWithInt:60],
                                  @"bbh":[NSNumber numberWithInt:50]
                                  };
+        NSDictionary *spaghetti = @{@"name":@"spaghetti",
+                                  @"bbw":[NSNumber numberWithInt:6000],
+                                  @"bbh":[NSNumber numberWithInt:65000]
+                                  };
         NSDictionary *tomato = @{@"name":@"tomato",
                                  @"bbw":[NSNumber numberWithInt:45],
                                  @"bbh":[NSNumber numberWithInt:40]
                                  };
+        NSDictionary *garlic = @{@"name":@"garlic",
+                                  @"bbw":[NSNumber numberWithInt:6000],
+                                  @"bbh":[NSNumber numberWithInt:65000]
+                                  };
         NSDictionary *butter = @{@"name":@"butter",
                                  @"bbw":[NSNumber numberWithInt:50],
                                  @"bbh":[NSNumber numberWithInt:32]
                                  };
+        NSDictionary *oliveOil = @{@"name":@"oliveOil",
+                                   @"bbw":[NSNumber numberWithInt:6000],
+                                   @"bbh":[NSNumber numberWithInt:65000]
+                                   };
         
         NSDictionary *strawberry = @{@"name":@"strawberry",
                                      @"bbw":[NSNumber numberWithInt:40],
@@ -92,18 +109,28 @@
                                     @"bbh":[NSNumber numberWithInt:45]
                                     };
         // recipes
-        NSDictionary *tomatoSoup = @{@"extras": @[basil],
+        NSDictionary *tomatoSoup = @{@"name":@"soup",
+                                     @"extras": @[basil],
                                      @"seasonings": @[salt,pepper],
                                      @"bases": @[tomato, butter],
                                      @"reset": @[pot]};
         
-        NSDictionary *cake = @{@"extras": @[strawberry],
+        NSDictionary *pasta = @{@"name":@"pasta",
+                                @"extras": @[basil,butter],//,oregano],
+                                @"seasonings": @[salt,pepper],
+                                @"bases": @[tomato],//,garlic,spaghetti,oliveOil],
+                                @"reset": @[pot]
+                                };
+        
+        NSDictionary *cake = @{@"name":@"cake",
+                               @"extras": @[strawberry],
                                @"seasonings": @[salt,vanillaExtract],
                                @"bases": @[egg, flour, sugar, milk],
                                @"reset": @[bakingPan]};
         // load up the cookbook
         cookbook = @[
                    tomatoSoup, // TOMATO SOUP 4 REAL
+                   pasta,
                    cake // CAKE
                    ];
         // the trash can
@@ -119,8 +146,9 @@
         
         rotten = @[moldyStrawberry]; //,moldyBanana,rottenMilk,rottenEgg,badPepper];
         
-        _currentRecipe = arc4random()%(int)[cookbook count];
-        self.timeLeft = 5;
+        _currentRecipe = [cookbook objectAtIndex:course%[cookbook count]]; //arc4random()%(int)[cookbook count];
+        _recipeName = [_currentRecipe valueForKey:@"name"];
+        _timeLeft = 10.0/(1+course);
         self.points = 1;
         _drops = [NSMutableArray array];
     }
@@ -128,6 +156,7 @@
 }
 
 - (void)didLoadFromCCB {
+    _statusLabel.string = _recipeName;
     //put a bunch of drops in the array and also on screen
     int numDrops = arc4random()%30+30;
     for (int i = 0; i < numDrops; i++) {
@@ -149,25 +178,24 @@
 }
 
 - (Drop *)generateDrop {
-    NSDictionary *currentRecipe = [cookbook objectAtIndex:_currentRecipe];
     NSArray *fromThese;
     Drop *d;
     int randomizer = arc4random()%40;
     if (randomizer < 18) { // 45% chance of creating a neutral drop
         //NSLog(@"generating a neutr drop");
-        fromThese = [currentRecipe valueForKey:@"bases"];
+        fromThese = [_currentRecipe valueForKey:@"bases"];
         d = [self makeDrop:fromThese];
         d.multiplier = 2;
     }
     else if (randomizer < 20) { // 5% chance of creating a double drop
         //NSLog(@"generating a doub drop");
-        fromThese = [currentRecipe valueForKey:@"seasonings"];
+        fromThese = [_currentRecipe valueForKey:@"seasonings"];
         d = [self makeDrop:fromThese];
         d.multiplier = 3;
     }
     else if (randomizer < 21) { // 2.5% chance of creating a triple drop
         //NSLog(@"generating a trip drop");
-        fromThese = [currentRecipe valueForKey:@"extras"];
+        fromThese = [_currentRecipe valueForKey:@"extras"];
         d = [self makeDrop:fromThese];
         d.multiplier = 5;
     }
@@ -178,7 +206,7 @@
     }
     else { // 2.5% chance of creating a reset drop
         //NSLog(@"generating a reset drop");
-        d = [self makeDrop:[currentRecipe valueForKey:@"reset"]];
+        d = [self makeDrop:[_currentRecipe valueForKey:@"reset"]];
         d.multiplier = 0;
     }
     return d;
@@ -189,7 +217,7 @@
     
     // accept touches
     self.userInteractionEnabled = YES;
-    [self scheduleOnce:@selector(endGame) delay:10.0f];
+    [self scheduleOnce:@selector(endGame) delay:_timeLeft];
 }
 
 - (void)update:(CCTime)delta {
@@ -214,7 +242,9 @@
 
 - (void)endGame {
     GameOverScene *nextScene = (GameOverScene *)[CCBReader load:@"GameOverScene"];
+    nextScene.recipe = _recipeName;
     nextScene.finalScore = self.points;
+    if (self.points > 0 && self.points%30 == 0) { course++; }
     [[CCDirector sharedDirector] replaceScene:nextScene];
 }
 
@@ -232,7 +262,7 @@
             //NSLog(@"yo you touched a thing with multiplier %f",multiplier);
             // if score is already negative and you clicked on another negative multiplier, it is doubly bad
             // the real life analogy for this is, if you mixed in a bad ingredient, your food is now bad. if you mix in another bad ingredient, your food is worse.
-            NSLog(@"multiplier is %f",multiplier);
+            //NSLog(@"multiplier is %f",multiplier);
             if (self.points < 0 && multiplier < 0) {
                 multiplier *= -2;
             }
