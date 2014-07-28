@@ -22,7 +22,7 @@
     NSString *resultString;
     NSString *successString = @"SUCCESS";
     if (self.finalScore < 0) {
-        resultString = @"Your %@ is not edible";
+        resultString = @"You've got mold in your %@! You used some bad ingredients!";
         successString = @"FAILED";
         _creditsButton.visible = NO;
     } else if (self.finalScore%2 != 0) {

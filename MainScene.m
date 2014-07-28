@@ -42,8 +42,8 @@ static int course = 0;
                                 @"bbh":[NSNumber numberWithInt:65]
                                 };
         NSDictionary *oregano = @{@"name":@"oregano",
-                                  @"bbw":[NSNumber numberWithInt:6000],
-                                  @"bbh":[NSNumber numberWithInt:65000]
+                                  @"bbw":[NSNumber numberWithInt:27],
+                                  @"bbh":[NSNumber numberWithInt:27]
                                   };
         NSDictionary *salt = @{@"name":@"salt",
                                @"bbw":[NSNumber numberWithInt:60],
@@ -54,24 +54,36 @@ static int course = 0;
                                  @"bbh":[NSNumber numberWithInt:50]
                                  };
         NSDictionary *spaghetti = @{@"name":@"spaghetti",
-                                  @"bbw":[NSNumber numberWithInt:6000],
-                                  @"bbh":[NSNumber numberWithInt:65000]
+                                  @"bbw":[NSNumber numberWithInt:115],
+                                  @"bbh":[NSNumber numberWithInt:45]
                                   };
+        NSDictionary *baguette = @{@"name":@"baguette",
+                                   @"bbw":[NSNumber numberWithInt:130],
+                                   @"bbh":[NSNumber numberWithInt:30]
+                                   };
         NSDictionary *tomato = @{@"name":@"tomato",
                                  @"bbw":[NSNumber numberWithInt:45],
                                  @"bbh":[NSNumber numberWithInt:40]
                                  };
+        NSDictionary *onion = @{@"name":@"onion",
+                                 @"bbw":[NSNumber numberWithInt:45],
+                                 @"bbh":[NSNumber numberWithInt:40]
+                                 };
         NSDictionary *garlic = @{@"name":@"garlic",
-                                  @"bbw":[NSNumber numberWithInt:6000],
-                                  @"bbh":[NSNumber numberWithInt:65000]
+                                  @"bbw":[NSNumber numberWithInt:50],
+                                  @"bbh":[NSNumber numberWithInt:45]
                                   };
         NSDictionary *butter = @{@"name":@"butter",
                                  @"bbw":[NSNumber numberWithInt:50],
                                  @"bbh":[NSNumber numberWithInt:32]
                                  };
         NSDictionary *oliveOil = @{@"name":@"oliveOil",
-                                   @"bbw":[NSNumber numberWithInt:6000],
-                                   @"bbh":[NSNumber numberWithInt:65000]
+                                   @"bbw":[NSNumber numberWithInt:31],
+                                   @"bbh":[NSNumber numberWithInt:82]
+                                   };
+        NSDictionary *balsamicV = @{@"name":@"vinegar",
+                                   @"bbw":[NSNumber numberWithInt:57],
+                                   @"bbh":[NSNumber numberWithInt:65]
                                    };
         
         NSDictionary *strawberry = @{@"name":@"strawberry",
@@ -108,17 +120,27 @@ static int course = 0;
                                     @"bbw":[NSNumber numberWithInt:75],
                                     @"bbh":[NSNumber numberWithInt:45]
                                     };
+        NSDictionary *bowl = @{@"name":@"bowl",
+                               @"bbw":[NSNumber numberWithInt:60],
+                               @"bbh":[NSNumber numberWithInt:35]
+                               };
         // recipes
         NSDictionary *tomatoSoup = @{@"name":@"soup",
                                      @"extras": @[basil],
                                      @"seasonings": @[salt,pepper],
-                                     @"bases": @[tomato, butter],
+                                     @"bases": @[tomato,butter],
                                      @"reset": @[pot]};
         
+        NSDictionary *bruschetta = @{@"name":@"bruschetta",
+                                     @"extras": @[basil,onion],
+                                     @"seasonings": @[salt,pepper,balsamicV],
+                                     @"bases": @[tomato,baguette,garlic,oliveOil],
+                                     @"reset": @[bowl]};
+        
         NSDictionary *pasta = @{@"name":@"pasta",
-                                @"extras": @[basil,butter],//,oregano],
+                                @"extras": @[basil,butter,oregano],
                                 @"seasonings": @[salt,pepper],
-                                @"bases": @[tomato],//,garlic,spaghetti,oliveOil],
+                                @"bases": @[tomato,garlic,spaghetti,oliveOil],
                                 @"reset": @[pot]
                                 };
         
@@ -130,6 +152,7 @@ static int course = 0;
         // load up the cookbook
         cookbook = @[
                    tomatoSoup, // TOMATO SOUP 4 REAL
+                   bruschetta,
                    pasta,
                    cake // CAKE
                    ];
@@ -139,12 +162,15 @@ static int course = 0;
                                           @"bbw":[NSNumber numberWithInt:50],
                                           @"bbh":[NSNumber numberWithInt:45]
                                           };
-//        MoldyDrop *moldyBanana = [[MoldyDrop alloc] initWithName:@"moldyBanana" andW:500 andH:500];
+        NSDictionary *moldyBread = @{@"name":@"moldyBread",
+                                          @"bbw":[NSNumber numberWithInt:130],
+                                          @"bbh":[NSNumber numberWithInt:30]
+                                          };
 //        MoldyDrop *rottenMilk = [[MoldyDrop alloc] initWithName:@"rottenMilk" andW:500 andH:500];
 //        MoldyDrop *rottenEgg = [[MoldyDrop alloc] initWithName:@"rottenEgg" andW:500 andH:500];
 //        MoldyDrop *badPepper = [[MoldyDrop alloc] initWithName:@"badPepper" andW:500 andH:500];
         
-        rotten = @[moldyStrawberry]; //,moldyBanana,rottenMilk,rottenEgg,badPepper];
+        rotten = @[moldyStrawberry,moldyBread]; //,rottenMilk,rottenEgg,badPepper];
         
         _currentRecipe = [cookbook objectAtIndex:course%[cookbook count]]; //arc4random()%(int)[cookbook count];
         _recipeName = [_currentRecipe valueForKey:@"name"];
@@ -268,6 +294,13 @@ static int course = 0;
             }
             self.points *= multiplier;
             if (self.points == 0) { self.points++; }
+            // LIL ANIMATION RIGHT HERE
+            CCSprite *poof = (CCSprite *)[CCBReader load:@"spark"];
+            [self addChild:poof];
+            poof.position = ccp(d.position.x,d.position.y);
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self removeChild:poof];
+            });
             [_physicsNode removeChild:d];
             [_drops removeObject:d];
         }
