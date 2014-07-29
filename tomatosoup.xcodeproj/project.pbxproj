@@ -62,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C5798AF19872231004797BF /* Foods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foods.h; sourceTree = "<group>"; };
+		4C5798B1198723A2004797BF /* Recipes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recipes.h; sourceTree = "<group>"; };
+		4C5798B219872A98004797BF /* Cookware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cookware.h; sourceTree = "<group>"; };
+		4C5798B319872AD1004797BF /* Trash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trash.h; sourceTree = "<group>"; };
 		4CD1C36C197E206800E14FE8 /* Drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drop.h; sourceTree = "<group>"; };
 		4CD1C36D197E206800E14FE8 /* Drop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drop.m; sourceTree = "<group>"; };
 		4CD1C370197E206800E14FE8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
@@ -142,6 +146,10 @@
 			children = (
 				4CD1C383197E21C000E14FE8 /* MainScene.h */,
 				4CD1C384197E21C000E14FE8 /* MainScene.m */,
+				4C5798AF19872231004797BF /* Foods.h */,
+				4C5798B219872A98004797BF /* Cookware.h */,
+				4C5798B319872AD1004797BF /* Trash.h */,
+				4C5798B1198723A2004797BF /* Recipes.h */,
 				4CD1C36C197E206800E14FE8 /* Drop.h */,
 				4CD1C36D197E206800E14FE8 /* Drop.m */,
 				4CD1C370197E206800E14FE8 /* GameOverScene.h */,

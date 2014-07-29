@@ -7,6 +7,8 @@
 //  Created by Jessica on 21/7/13.
 //
 
+#import "Recipes.h"
+#import "Trash.h"
 #import "MainScene.h"
 #import "Drop.h"
 #import "GameOverScene.h"
@@ -33,142 +35,13 @@ static int course = 0;
 
 - (id)init {
     if (self = [super init]) {
-        // okay i know what's up. i am creating instances of drops and trying to treat them like classes. i see now. okay. so i just need to store this in another sort of way, and then feed that information into drops and actually create the drops when i'm in the fn generateDrops
-        // i did this but now they aint casting properly
-        // my fridge, which i will eventually move out of this document
-        // aka all foods
-        NSDictionary *basil = @{@"name":@"basil",
-                                @"bbw":[NSNumber numberWithInt:60],
-                                @"bbh":[NSNumber numberWithInt:65]
-                                };
-        NSDictionary *oregano = @{@"name":@"oregano",
-                                  @"bbw":[NSNumber numberWithInt:27],
-                                  @"bbh":[NSNumber numberWithInt:27]
-                                  };
-        NSDictionary *salt = @{@"name":@"salt",
-                               @"bbw":[NSNumber numberWithInt:60],
-                               @"bbh":[NSNumber numberWithInt:50]
-                               };
-        NSDictionary *pepper = @{@"name":@"pepper",
-                                 @"bbw":[NSNumber numberWithInt:60],
-                                 @"bbh":[NSNumber numberWithInt:50]
-                                 };
-        NSDictionary *spaghetti = @{@"name":@"spaghetti",
-                                  @"bbw":[NSNumber numberWithInt:115],
-                                  @"bbh":[NSNumber numberWithInt:45]
-                                  };
-        NSDictionary *baguette = @{@"name":@"baguette",
-                                   @"bbw":[NSNumber numberWithInt:130],
-                                   @"bbh":[NSNumber numberWithInt:30]
-                                   };
-        NSDictionary *tomato = @{@"name":@"tomato",
-                                 @"bbw":[NSNumber numberWithInt:45],
-                                 @"bbh":[NSNumber numberWithInt:40]
-                                 };
-        NSDictionary *onion = @{@"name":@"onion",
-                                 @"bbw":[NSNumber numberWithInt:45],
-                                 @"bbh":[NSNumber numberWithInt:40]
-                                 };
-        NSDictionary *garlic = @{@"name":@"garlic",
-                                  @"bbw":[NSNumber numberWithInt:50],
-                                  @"bbh":[NSNumber numberWithInt:45]
-                                  };
-        NSDictionary *butter = @{@"name":@"butter",
-                                 @"bbw":[NSNumber numberWithInt:50],
-                                 @"bbh":[NSNumber numberWithInt:32]
-                                 };
-        NSDictionary *oliveOil = @{@"name":@"oliveOil",
-                                   @"bbw":[NSNumber numberWithInt:31],
-                                   @"bbh":[NSNumber numberWithInt:82]
-                                   };
-        NSDictionary *balsamicV = @{@"name":@"vinegar",
-                                   @"bbw":[NSNumber numberWithInt:57],
-                                   @"bbh":[NSNumber numberWithInt:65]
-                                   };
-        
-        NSDictionary *strawberry = @{@"name":@"strawberry",
-                                     @"bbw":[NSNumber numberWithInt:40],
-                                     @"bbh":[NSNumber numberWithInt:35]
-                                     };
-        NSDictionary *vanillaExtract = @{@"name":@"VE",
-                                         @"bbw":[NSNumber numberWithInt:25],
-                                         @"bbh":[NSNumber numberWithInt:45]
-                                         };
-        NSDictionary *egg = @{@"name":@"egg",
-                              @"bbw":[NSNumber numberWithInt:25],
-                              @"bbh":[NSNumber numberWithInt:30]
-                              };
-        NSDictionary *flour = @{@"name":@"flour",
-                                @"bbw":[NSNumber numberWithInt:45],
-                                @"bbh":[NSNumber numberWithInt:50]
-                                };
-        NSDictionary *sugar = @{@"name":@"sugar_bag",
-                                @"bbw":[NSNumber numberWithInt:45],
-                                @"bbh":[NSNumber numberWithInt:50]
-                                };
-        NSDictionary *milk = @{@"name":@"milk",
-                               @"bbw":[NSNumber numberWithInt:31],
-                               @"bbh":[NSNumber numberWithInt:53]
-                               };
-        
-        // cookingTools (RESET)
-        NSDictionary *pot = @{@"name":@"pot",
-                              @"bbw":[NSNumber numberWithInt:90],
-                              @"bbh":[NSNumber numberWithInt:60]
-                              };
-        NSDictionary *bakingPan = @{@"name":@"bakingPan",
-                                    @"bbw":[NSNumber numberWithInt:75],
-                                    @"bbh":[NSNumber numberWithInt:45]
-                                    };
-        NSDictionary *bowl = @{@"name":@"bowl",
-                               @"bbw":[NSNumber numberWithInt:60],
-                               @"bbh":[NSNumber numberWithInt:35]
-                               };
-        // recipes
-        NSDictionary *tomatoSoup = @{@"name":@"soup",
-                                     @"extras": @[basil],
-                                     @"seasonings": @[salt,pepper],
-                                     @"bases": @[tomato,butter],
-                                     @"reset": @[pot]};
-        
-        NSDictionary *bruschetta = @{@"name":@"bruschetta",
-                                     @"extras": @[basil,onion],
-                                     @"seasonings": @[salt,pepper,balsamicV],
-                                     @"bases": @[tomato,baguette,garlic,oliveOil],
-                                     @"reset": @[bowl]};
-        
-        NSDictionary *pasta = @{@"name":@"pasta",
-                                @"extras": @[basil,butter,oregano],
-                                @"seasonings": @[salt,pepper],
-                                @"bases": @[tomato,garlic,spaghetti,oliveOil],
-                                @"reset": @[pot]
-                                };
-        
-        NSDictionary *cake = @{@"name":@"cake",
-                               @"extras": @[strawberry],
-                               @"seasonings": @[salt,vanillaExtract],
-                               @"bases": @[egg, flour, sugar, milk],
-                               @"reset": @[bakingPan]};
         // load up the cookbook
         cookbook = @[
-                   tomatoSoup, // TOMATO SOUP 4 REAL
-                   bruschetta,
-                   pasta,
-                   cake // CAKE
-                   ];
-        // the trash can
-        // aka rotten food
-        NSDictionary *moldyStrawberry = @{@"name":@"moldyStrawberry",
-                                          @"bbw":[NSNumber numberWithInt:50],
-                                          @"bbh":[NSNumber numberWithInt:45]
-                                          };
-        NSDictionary *moldyBread = @{@"name":@"moldyBread",
-                                          @"bbw":[NSNumber numberWithInt:130],
-                                          @"bbh":[NSNumber numberWithInt:30]
-                                          };
-//        MoldyDrop *rottenMilk = [[MoldyDrop alloc] initWithName:@"rottenMilk" andW:500 andH:500];
-//        MoldyDrop *rottenEgg = [[MoldyDrop alloc] initWithName:@"rottenEgg" andW:500 andH:500];
-//        MoldyDrop *badPepper = [[MoldyDrop alloc] initWithName:@"badPepper" andW:500 andH:500];
+                     tomatoSoup, // TOMATO SOUP 4 REAL
+                     bruschetta,
+                     pasta,
+                     cake // CAKE
+                     ];
         
         rotten = @[moldyStrawberry,moldyBread]; //,rottenMilk,rottenEgg,badPepper];
         
