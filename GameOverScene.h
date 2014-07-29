@@ -12,5 +12,6 @@
 
 @property (nonatomic,strong) NSString *recipe;
 @property (assign) int finalScore;
+@property (nonatomic,strong) NSArray *results;
 
 @end

@@ -23,14 +23,18 @@ static int course = 0;
     NSDictionary *_currentRecipe;
     // array to keep track of what drops are on screen
     NSMutableArray *_drops;
+    
     // physics
     CCPhysicsNode *_physicsNode;
+    
     // what am i making
     CCLabelTTF *_statusLabel;
     // keep track of score
     CCLabelTTF *_scoreLabel;
     // time left
     float _timeLeft;
+    // what did you add just now
+    NSMutableArray *_inThePot;
 }
 
 - (id)init {
@@ -50,6 +54,7 @@ static int course = 0;
         _timeLeft = 10.0/(1+course);
         self.points = 1;
         _drops = [NSMutableArray array];
+        _inThePot = [NSMutableArray array];
     }
     return self;
 }
@@ -143,6 +148,7 @@ static int course = 0;
     GameOverScene *nextScene = (GameOverScene *)[CCBReader load:@"GameOverScene"];
     nextScene.recipe = _recipeName;
     nextScene.finalScore = self.points;
+    nextScene.results = _inThePot;
     if (self.points > 0 && self.points%30 == 0) { course++; }
     [[CCDirector sharedDirector] replaceScene:nextScene];
 }
@@ -165,8 +171,16 @@ static int course = 0;
             if (self.points < 0 && multiplier < 0) {
                 multiplier *= -2;
             }
-            self.points *= multiplier;
-            if (self.points == 0) { self.points++; }
+            if (multiplier == 0) {
+                self.points = 1;
+                // clear the _inThePot array
+                [_inThePot removeAllObjects];
+            } else {
+                self.points *= multiplier;
+                // add it to the pot
+                [_inThePot addObject:d.fileName];
+            }
+            
             // LIL ANIMATION RIGHT HERE
             CCSprite *poof = (CCSprite *)[CCBReader load:@"spark"];
             [self addChild:poof];
@@ -174,6 +188,7 @@ static int course = 0;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self removeChild:poof];
             });
+            // clear that drop from view
             [_physicsNode removeChild:d];
             [_drops removeObject:d];
         }

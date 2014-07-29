@@ -46,8 +46,8 @@ NSDictionary * (^cookPasta) () = ^() {
 NSDictionary * (^cookCake) () = ^() {
     return @{@"name":@"cake",
                                     @"extras": @[strawberry],
-                                    @"seasonings": @[salt,vanillaExtract],
-                                    @"bases": @[egg, flour, sugar, milk],
+                                    @"seasonings": @[sugar,vanillaExtract],
+                                    @"bases": @[egg, flour, salt, milk],
                                     @"reset": @[bakingPan]
                                     };
 };

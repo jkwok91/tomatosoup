@@ -9,6 +9,7 @@
 #import "GameOverScene.h"
 
 @implementation GameOverScene{
+    CCLabelTTF *_itemsLabel;
     CCLabelTTF *_resultLabel;
     CCLabelTTF *_successLabel;
     CCLabelTTF *_creditsLabel;
@@ -26,10 +27,10 @@
         successString = @"FAILED";
         _creditsButton.visible = NO;
     } else if (self.finalScore%2 != 0) {
-        resultString = @"Your %@ lacks tomatoes!";
+        resultString = @"Your %@ lacks some core ingredients!";
         successString = @"FAILED";
     } else if (self.finalScore%3 != 0) {
-        resultString = @"Your %@ is just tomato water!"; // need to change out some of these statements
+        resultString = @"Your %@ is just bland mishmash!"; // need to change out some of these statements
         successString = @"FAILED";
     } else if (self.finalScore%5 != 0) {
         resultString = @"Your %@ lacks a certain je ne sais quoi...";
@@ -44,8 +45,15 @@
         resultString = @"You're the god of %@.";
         _creditsButton.visible = YES;
     }
+    _itemsLabel.string = [self getAll];
     _resultLabel.string = [NSString stringWithFormat:resultString,self.recipe];
     _successLabel.string = successString;
+}
+
+- (NSString *)getAll {
+    NSMutableString *_allFoods = [self.results componentsJoinedByString:@", "];
+    // TODO: make this nice and formatted with like, basil x5, and moldyStrawberry x10. etc
+    return _allFoods;
 }
 
 - (void)restart {
