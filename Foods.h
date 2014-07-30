@@ -88,7 +88,7 @@ NSDictionary * (^makeButter) () = ^() {
 #define butter makeButter()
 
 NSDictionary * (^makeOliveOil) () = ^() {
-    return @{@"name":@"oliveOil",
+    return @{@"name":@"olive_oil",
                            @"bbw":[NSNumber numberWithInt:31],
                            @"bbh":[NSNumber numberWithInt:82]
                            };
@@ -114,7 +114,7 @@ NSDictionary * (^makeStrawberry) () = ^() {
 #define strawberry makeStrawberry()
 
 NSDictionary * (^makeVE) () = ^() {
-    return @{@"name":@"VE",
+    return @{@"name":@"vanilla_extract",
                                  @"bbw":[NSNumber numberWithInt:25],
                                  @"bbh":[NSNumber numberWithInt:45]
                                  };

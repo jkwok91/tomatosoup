@@ -115,24 +115,6 @@
 								<string>Use regular file</string>
 							</array>
 						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.26666668057441711</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string></string>
-								<string></string>
-							</array>
-						</dict>
 					</array>
 					<key>name</key>
 					<string>spriteFrame</string>

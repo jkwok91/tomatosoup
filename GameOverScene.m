@@ -22,21 +22,26 @@
     _creditsButton.visible = NO;
     NSString *resultString;
     NSString *successString = @"SUCCESS";
-    if (self.finalScore < 0) {
+    if (self.finalScore < -300000) {
+        resultString = @"You're disgusting.";
+        successString = @"FAILED";
+    } else if (self.finalScore < -3000) {
+        resultString = @"I ain't eatin' this.";
+        successString = @"FAILED";
+    } else if (self.finalScore < 0) {
         resultString = @"You've got mold in your %@! You used some bad ingredients!";
         successString = @"FAILED";
-        _creditsButton.visible = NO;
     } else if (self.finalScore%2 != 0) {
         resultString = @"Your %@ lacks some core ingredients!";
         successString = @"FAILED";
     } else if (self.finalScore%3 != 0) {
-        resultString = @"Your %@ is just bland mishmash!"; // need to change out some of these statements
+        resultString = @"Your %@ is just bland mishmash!";
         successString = @"FAILED";
     } else if (self.finalScore%5 != 0) {
         resultString = @"Your %@ lacks a certain je ne sais quoi...";
-        successString = @"NEEDS IMPROVEMENT";
+        successString = @"ALMOST"; // thanks, lucy liu, for giving that speech about almost being the worst word in the language
     } else if (self.finalScore <= 30000) {
-        resultString = @"It appears that you made %@! Yum";
+        resultString = @"It appears that you made %@! Yum.";
         _creditsButton.visible = YES;
     } else if (self.finalScore <= 300000) {
         resultString = @"This %@ is amazing! And there was enough for both of us!";
@@ -51,8 +56,13 @@
 }
 
 - (NSString *)getAll {
-    NSMutableString *_allFoods = [self.results componentsJoinedByString:@", "];
-    // TODO: make this nice and formatted with like, basil x5, and moldyStrawberry x10. etc
+    NSString *_allFoods = @"";
+    if ([self.results count] == 0) {
+        _allFoods = @"You didn't cook anything!";
+    }
+    for (NSString *key in self.results) {
+        _allFoods = [NSString stringWithFormat:@"%@ %@  x%i\n",_allFoods,key,[self.results[key] intValue]];
+    }
     return _allFoods;
 }
 
@@ -64,7 +74,6 @@
 - (void)showCredits {
     _creditsButton.visible = NO;
     _creditsLabel.visible = YES;
-    _creditsLabel.string = @"I could not have done this without MGWU, Daniel Haaser, Zach Barryte, Eric Braen, Jack Vittimberga, Frank Navarro-Velasco, Hans Yadav, and Phillip Ou. With love to Tala Huhe, Mike Comella, Nathan Malkin, Emily Phillips, and Misha Bhandari.";
 }
 
 

@@ -34,7 +34,7 @@ static int course = 0;
     // time left
     float _timeLeft;
     // what did you add just now
-    NSMutableArray *_inThePot;
+    NSMutableDictionary *_inThePot;
 }
 
 - (id)init {
@@ -51,16 +51,19 @@ static int course = 0;
         
         _currentRecipe = [cookbook objectAtIndex:course%[cookbook count]]; //arc4random()%(int)[cookbook count];
         _recipeName = [_currentRecipe valueForKey:@"name"];
-        _timeLeft = 10.0/(1+course);
+        _timeLeft = 10.0;
+        for (int i = 0; i < course; i++) {
+            _timeLeft -= 1.0/(1+i);
+        }
         self.points = 1;
         _drops = [NSMutableArray array];
-        _inThePot = [NSMutableArray array];
+        _inThePot = [NSMutableDictionary dictionary];
     }
     return self;
 }
 
 - (void)didLoadFromCCB {
-    _statusLabel.string = _recipeName;
+    _statusLabel.string = [NSString stringWithFormat:@"You're attempting to make %@ (course #%i)",_recipeName,course+1];
     //put a bunch of drops in the array and also on screen
     int numDrops = arc4random()%30+30;
     for (int i = 0; i < numDrops; i++) {
@@ -77,7 +80,6 @@ static int course = 0;
     NSString *fileName = [dict valueForKey:@"name"];
     int w = [[dict valueForKey:@"bbw"] intValue];
     int h = [[dict valueForKey:@"bbh"] intValue];
-    //NSLog(@": %@,%i,%i",fileName,w,h);
     return [[Drop alloc] initWithName:fileName andW:w andH:h];
 }
 
@@ -164,21 +166,23 @@ static int course = 0;
                                  d.contentSize.height);
         if (CGRectContainsPoint(bbox, touched)) {
             float multiplier = d.multiplier;
-            //NSLog(@"yo you touched a thing with multiplier %f",multiplier);
             // if score is already negative and you clicked on another negative multiplier, it is doubly bad
             // the real life analogy for this is, if you mixed in a bad ingredient, your food is now bad. if you mix in another bad ingredient, your food is worse.
-            //NSLog(@"multiplier is %f",multiplier);
             if (self.points < 0 && multiplier < 0) {
                 multiplier *= -2;
             }
             if (multiplier == 0) {
                 self.points = 1;
-                // clear the _inThePot array
                 [_inThePot removeAllObjects];
             } else {
                 self.points *= multiplier;
                 // add it to the pot
-                [_inThePot addObject:d.fileName];
+                NSString *keyName = [d.fileName stringByReplacingOccurrencesOfString:@"_" withString:@" "];
+                if (_inThePot[keyName]) {
+                    [_inThePot setValue:@([_inThePot[keyName] intValue]+1) forKey:keyName];
+                } else {
+                    [_inThePot setValue:[NSNumber numberWithInt:1] forKey:keyName];
+                }
             }
             
             // LIL ANIMATION RIGHT HERE

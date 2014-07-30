@@ -16,7 +16,7 @@ NSDictionary *(^getPot) () = ^() {
 #define pot getPot()
 
 NSDictionary *(^getPan) () = ^() {
-  return @{@"name":@"bakingPan",
+  return @{@"name":@"baking_pan",
                             @"bbw":[NSNumber numberWithInt:75],
                             @"bbh":[NSNumber numberWithInt:45]
                             };

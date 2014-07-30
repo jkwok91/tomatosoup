@@ -9,7 +9,7 @@
 // the trash can
 // aka rotten food
 NSDictionary * (^makeMoldyStrawberry) () = ^() {
-    return @{@"name":@"moldyStrawberry",
+    return @{@"name":@"moldy_strawberry",
                                   @"bbw":[NSNumber numberWithInt:50],
                                   @"bbh":[NSNumber numberWithInt:45]
                                   };
@@ -17,8 +17,8 @@ NSDictionary * (^makeMoldyStrawberry) () = ^() {
 #define moldyStrawberry makeMoldyStrawberry()
 
 NSDictionary * (^makeMoldyBread) () = ^() {
-    return @{@"name":@"moldyBread",
-                             @"bbw":[NSNumber numberWithInt:130],
+    return @{@"name":@"moldy_bread",
+                             @"bbw":[NSNumber numberWithInt:120],
                              @"bbh":[NSNumber numberWithInt:30]
                              };
 };

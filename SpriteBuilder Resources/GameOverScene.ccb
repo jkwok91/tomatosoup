@@ -147,7 +147,7 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
+							<real>400</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -279,7 +279,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>361</real>
+							<real>346</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -354,7 +354,7 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>200</real>
+							<real>275</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -452,6 +452,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -486,7 +488,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>174</real>
+							<real>119</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -820,7 +822,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>104</real>
+							<real>56</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1154,7 +1156,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>93</real>
+							<real>50</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1191,7 +1193,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>KITCHEN SLAVES &lt;3</string>
+							<string>I could not have done this without MGWU, Daniel Haaser, Zach Barryte, Eric Braen, Jack Vittimberga, Frank Navarro-Velasco, Hans Yadav, Sam Jimenez, and Phillip Ou. With love to Tala Huhe, Mike Comella, Nathan Malkin, Emily Phillips, and Misha Bhandari.</string>
 							<false/>
 						</array>
 					</dict>
@@ -1229,7 +1231,7 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>200</real>
+							<real>300</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1361,7 +1363,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>243</real>
+							<real>215</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1534,8 +1536,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1611,7 +1611,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>288</real>
+							<real>282</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1784,8 +1784,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>seqExpanded</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
