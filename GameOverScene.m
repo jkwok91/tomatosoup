@@ -14,6 +14,7 @@
     CCLabelTTF *_successLabel;
     CCLabelTTF *_creditsLabel;
     CCButton *_creditsButton;
+    CCSprite *_successSprite;
 }
 
 - (void)onEnter {
@@ -21,34 +22,36 @@
     _creditsLabel.visible = NO;
     _creditsButton.visible = NO;
     NSString *resultString;
-    NSString *successString = @"SUCCESS";
+    BOOL success = NO;
+    NSString *successString = @"FAILED";
     if (self.finalScore < -300000) {
         resultString = @"You're disgusting.";
-        successString = @"FAILED";
     } else if (self.finalScore < -3000) {
         resultString = @"I ain't eatin' this.";
-        successString = @"FAILED";
     } else if (self.finalScore < 0) {
         resultString = @"You've got mold in your %@! You used some bad ingredients!";
-        successString = @"FAILED";
     } else if (self.finalScore%2 != 0) {
         resultString = @"Your %@ lacks some core ingredients!";
-        successString = @"FAILED";
     } else if (self.finalScore%3 != 0) {
         resultString = @"Your %@ is just bland mishmash!";
-        successString = @"FAILED";
     } else if (self.finalScore%5 != 0) {
         resultString = @"Your %@ lacks a certain je ne sais quoi...";
         successString = @"ALMOST"; // thanks, lucy liu, for giving that speech about almost being the worst word in the language
     } else if (self.finalScore <= 30000) {
         resultString = @"It appears that you made %@! Yum.";
-        _creditsButton.visible = YES;
+        success = YES;
     } else if (self.finalScore <= 300000) {
         resultString = @"This %@ is amazing! And there was enough for both of us!";
-        _creditsButton.visible = YES;
+        success = YES;
     } else {
         resultString = @"You're the god of %@.";
+        success = YES;
+    }
+    if (success) {
+        CCLOG(@"success! position of sprite is %f,%f",_successSprite.anchorPoint.x,_successSprite.anchorPoint.y);
+        _successSprite.spriteFrame = [CCSpriteFrame frameWithImageNamed:[NSString stringWithFormat:@"Assets/completed_%@.png",self.recipe]];
         _creditsButton.visible = YES;
+        _successLabel.visible = NO;
     }
     _itemsLabel.string = [self getAll];
     _resultLabel.string = [NSString stringWithFormat:resultString,self.recipe];
