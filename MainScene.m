@@ -78,9 +78,7 @@ static int course = 0;
     int rand = arc4random()%[arr count];
     NSDictionary *dict = arr[rand];
     NSString *fileName = [dict valueForKey:@"name"];
-    int w = [[dict valueForKey:@"bbw"] intValue];
-    int h = [[dict valueForKey:@"bbh"] intValue];
-    return [[Drop alloc] initWithName:fileName andW:w andH:h];
+    return [[Drop alloc] initWithName:fileName];
 }
 
 - (Drop *)generateDrop {

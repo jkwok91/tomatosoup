@@ -8,25 +8,19 @@
 
 // cookingTools (RESET)
 NSDictionary *(^getPot) () = ^() {
-  return @{@"name":@"pot",
-                      @"bbw":[NSNumber numberWithInt:90],
-                      @"bbh":[NSNumber numberWithInt:60]
+  return @{@"name":@"pot"
                       };
 };
 #define pot getPot()
 
 NSDictionary *(^getPan) () = ^() {
-  return @{@"name":@"baking_pan",
-                            @"bbw":[NSNumber numberWithInt:75],
-                            @"bbh":[NSNumber numberWithInt:45]
+  return @{@"name":@"baking_pan"
                             };
 };
 #define bakingPan getPan()
 
 NSDictionary *(^getBowl) () = ^() {
-  return @{@"name":@"bowl",
-                       @"bbw":[NSNumber numberWithInt:60],
-                       @"bbh":[NSNumber numberWithInt:35]
+  return @{@"name":@"bowl"
                        };
 };
 #define bowl getBowl()

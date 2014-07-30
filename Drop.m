@@ -12,16 +12,14 @@
     CCSprite *_image;
 }
 
-- (id)initWithName:(NSString *)name andW:(int)w andH:(int)h {
+- (id)initWithName:(NSString *)name {
     if (self = [super init]) {
         self.fileName = name;
-        self.bbWidth = w;
-        self.bbHeight = h;
         _image = [CCSprite spriteWithImageNamed:[NSString stringWithFormat:@"Assets/%@.png",self.fileName]];
         _image.anchorPoint = ccp(0,0);
         [self addChild:_image];
-        self.contentSize = CGSizeMake(self.bbWidth,self.bbHeight);
-        double radius = 0.5*(pow((pow(self.bbWidth,2)+pow(self.bbHeight,2)),0.5));
+        self.contentSize = CGSizeMake(_image.contentSize.width,_image.contentSize.height+10);
+        double radius = 0.5*(pow((pow(_image.contentSize.width,2)+pow(_image.contentSize.height,2)),0.5));
         self.anchorPoint = ccp(0.5,0.5);
         self.physicsBody = [CCPhysicsBody bodyWithCircleOfRadius:radius andCenter:ccp(0.5f, 0.5f)];
     }
