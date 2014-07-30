@@ -85,8 +85,20 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
+		<key>Assets/baguette.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/bakingPan.png</key>
 		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/bowl.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
@@ -97,6 +109,13 @@
 		</dict>
 		<key>Assets/moldyStrawberry.png</key>
 		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/moldy_bread.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>

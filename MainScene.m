@@ -193,6 +193,9 @@ static int course = 0;
             // clear that drop from view
             [_physicsNode removeChild:d];
             [_drops removeObject:d];
+            
+            // prevent clicking on other shit
+            return;
         }
     }
 }
