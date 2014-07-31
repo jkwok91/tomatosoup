@@ -35,6 +35,9 @@ static int course = 0;
     float _timeLeft;
     // what did you add just now
     NSMutableDictionary *_inThePot;
+    
+    //audio
+    OALSimpleAudio *_audio;
 }
 
 - (id)init {
@@ -120,6 +123,8 @@ static int course = 0;
 
 - (void)onEnter {
     [super onEnter];
+    _audio = [OALSimpleAudio sharedInstance];
+    [_audio preloadEffect:@"bling.mp3"];
     
     // accept touches
     self.userInteractionEnabled = YES;
@@ -147,6 +152,7 @@ static int course = 0;
 }
 
 - (void)endGame {
+    [_audio stopAllEffects];
     GameOverScene *nextScene = (GameOverScene *)[CCBReader load:@"GameOverScene"];
     nextScene.recipe = _recipeName;
     nextScene.finalScore = self.points;
@@ -189,6 +195,7 @@ static int course = 0;
             CCSprite *poof = (CCSprite *)[CCBReader load:@"spark"];
             [self addChild:poof];
             poof.position = ccp(d.position.x,d.position.y);
+            [_audio playEffect:@"bling.mp3"];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self removeChild:poof];
             });

@@ -95,6 +95,26 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
+		<key>Assets/completed_bruschetta.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/completed_cake.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/completed_pasta.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/completed_soup.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/moldyStrawberry.png</key>
 		<dict>
 			<key>scaleFrom</key>

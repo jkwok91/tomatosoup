@@ -15,6 +15,7 @@
     CCLabelTTF *_creditsLabel;
     CCButton *_creditsButton;
     CCSprite *_successSprite;
+    NSString *_song;
 }
 
 - (void)onEnter {
@@ -24,6 +25,7 @@
     NSString *resultString;
     BOOL success = NO;
     NSString *successString = @"FAILED";
+    _song = @"worstNoise.mp3";
     if (self.finalScore < -300000) {
         resultString = @"You're disgusting.";
     } else if (self.finalScore < -3000) {
@@ -48,6 +50,7 @@
         success = YES;
     }
     if (success) {
+        _song = @"arpeggio1.mp3";
         CCLOG(@"success! position of sprite is %f,%f",_successSprite.anchorPoint.x,_successSprite.anchorPoint.y);
         _successSprite.spriteFrame = [CCSpriteFrame frameWithImageNamed:[NSString stringWithFormat:@"Assets/completed_%@.png",self.recipe]];
         _creditsButton.visible = YES;
@@ -56,6 +59,7 @@
     _itemsLabel.string = [self getAll];
     _resultLabel.string = [NSString stringWithFormat:resultString,self.recipe];
     _successLabel.string = successString;
+    [[OALSimpleAudio sharedInstance] playBg:_song];
 }
 
 - (NSString *)getAll {
@@ -70,6 +74,7 @@
 }
 
 - (void)restart {
+    [[OALSimpleAudio sharedInstance] stopBg];
     CCScene *nextScene = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:nextScene];
 }
