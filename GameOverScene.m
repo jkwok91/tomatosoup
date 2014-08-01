@@ -22,17 +22,9 @@
     NSString *_tweetText;
 }
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        self.viewController = [[UIViewController alloc] init];
-    }
-    return self;
-}
-
 - (void)onEnter {
     [super onEnter];
+    self.viewController = [[UIViewController alloc] init];
     _creditsLabel.visible = NO;
     _creditsButton.visible = NO;
     NSString *resultString;

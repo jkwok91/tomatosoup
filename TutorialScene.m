@@ -12,7 +12,9 @@
 
 - (void)play {
     CCScene *nextScene = [CCBReader loadAsScene:@"MainScene"];
-    [[CCDirector sharedDirector] replaceScene:nextScene];
+    CCScene *scene = [CCScene node];
+    [scene addChild:nextScene];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 @end

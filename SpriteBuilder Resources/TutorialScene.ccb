@@ -278,10 +278,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>160</real>
+							<real>0.5</real>
 							<real>326</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -486,10 +486,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>80</real>
+							<real>0.25</real>
 							<real>373</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -583,10 +583,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>217</real>
+							<real>0.67812502384185791</real>
 							<real>369</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -680,10 +680,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>218</real>
+							<real>0.68124997615814209</real>
 							<real>169</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -769,10 +769,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>103</real>
+							<real>0.32187500596046448</real>
 							<real>268</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -808,7 +808,7 @@ Seasoning and spices also contribute.</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/moldyStrawberry.png</string>
+							<string>Assets/moldy_strawberry.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -899,10 +899,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>160</real>
+							<real>0.5</real>
 							<real>227</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1109,10 +1109,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>160</real>
+							<real>0.5</real>
 							<real>135</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1642,10 +1642,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>99</real>
+							<real>0.30937498807907104</real>
 							<real>168</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1681,7 +1681,7 @@ Seasoning and spices also contribute.</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/bakingPan.png</string>
+							<string>Assets/baking_pan.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1698,6 +1698,8 @@ Seasoning and spices also contribute.</string>
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1731,10 +1733,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>153</real>
+							<real>0.47812500596046448</real>
 							<real>169</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1820,10 +1822,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>231.99998474121094</real>
+							<real>0.72499996423721313</real>
 							<real>385</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1909,10 +1911,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>241</real>
+							<real>0.75312501192092896</real>
 							<real>371</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1998,10 +2000,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>184</real>
+							<real>0.57499998807907104</real>
 							<real>266</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -2037,7 +2039,7 @@ Seasoning and spices also contribute.</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/moldyBread.png</string>
+							<string>Assets/moldy_bread.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -2087,10 +2089,10 @@ Seasoning and spices also contribute.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>148</real>
+							<real>0.46250000596046448</real>
 							<real>371</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>

@@ -158,7 +158,10 @@ static int course = 0;
     nextScene.finalScore = self.points;
     nextScene.results = _inThePot;
     if (self.points > 0 && self.points%30 == 0) { course++; }
-    [[CCDirector sharedDirector] replaceScene:nextScene];
+    // fugly repeated code right here
+    CCScene *scene = [CCScene node];
+    [scene addChild:nextScene];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
