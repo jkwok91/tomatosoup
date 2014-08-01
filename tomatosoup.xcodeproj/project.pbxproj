@@ -10,6 +10,7 @@
 		4C5798BA1989D980004797BF /* bling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C5798B91989D980004797BF /* bling.mp3 */; };
 		4C5798BC1989E027004797BF /* worstNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C5798BB1989E027004797BF /* worstNoise.mp3 */; };
 		4C5798BE1989E173004797BF /* arpeggio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C5798BD1989E173004797BF /* arpeggio1.mp3 */; };
+		4C5798C0198A0779004797BF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5798BF198A0779004797BF /* Social.framework */; };
 		4CD1C37B197E206800E14FE8 /* Drop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C36D197E206800E14FE8 /* Drop.m */; };
 		4CD1C37D197E206800E14FE8 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C371197E206800E14FE8 /* GameOverScene.m */; };
 		4CD1C381197E206800E14FE8 /* TutorialScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C379197E206800E14FE8 /* TutorialScene.m */; };
@@ -72,6 +73,7 @@
 		4C5798B91989D980004797BF /* bling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bling.mp3; sourceTree = "<group>"; };
 		4C5798BB1989E027004797BF /* worstNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = worstNoise.mp3; sourceTree = "<group>"; };
 		4C5798BD1989E173004797BF /* arpeggio1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arpeggio1.mp3; sourceTree = "<group>"; };
+		4C5798BF198A0779004797BF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4CD1C36C197E206800E14FE8 /* Drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drop.h; sourceTree = "<group>"; };
 		4CD1C36D197E206800E14FE8 /* Drop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drop.m; sourceTree = "<group>"; };
 		4CD1C370197E206800E14FE8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5798C0198A0779004797BF /* Social.framework in Frameworks */,
 				8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */,
 				B737898A1807642B0076A88C /* libcocos2d.a in Frameworks */,
 				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
@@ -223,6 +226,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C5798BF198A0779004797BF /* Social.framework */,
 				8392007918EE8E3300B6C429 /* GLKit.framework */,
 				B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */,
 				B77F1B3117B978D7009739AE /* QuartzCore.framework */,

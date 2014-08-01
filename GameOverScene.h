@@ -13,5 +13,6 @@
 @property (nonatomic,strong) NSString *recipe;
 @property (assign) int finalScore;
 @property (nonatomic,strong) NSDictionary *results;
+@property (nonatomic, retain) UIViewController *viewController;
 
 @end
