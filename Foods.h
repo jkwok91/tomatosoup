@@ -7,148 +7,112 @@
 //
 
 NSDictionary * (^makeBasil) () = ^() {
-    return @{@"name":@"basil",
-             @"bbw":[NSNumber numberWithInt:60],
-             @"bbh":[NSNumber numberWithInt:65]
+    return @{@"name":@"basil"
              };
 };
 #define basil makeBasil()
 
 
 NSDictionary * (^makeOregano) () = ^() {
-    return @{@"name":@"oregano",
-             @"bbw":[NSNumber numberWithInt:27],
-             @"bbh":[NSNumber numberWithInt:27]
+    return @{@"name":@"oregano"
              };
 };
 #define oregano makeOregano()
 
 NSDictionary * (^makeSalt) () = ^() {
-    return @{@"name":@"salt",
-                       @"bbw":[NSNumber numberWithInt:60],
-                       @"bbh":[NSNumber numberWithInt:50]
+    return @{@"name":@"salt"
                        };
 };
 #define salt makeSalt()
 
 NSDictionary * (^makePepper) () = ^() {
-    return @{@"name":@"pepper",
-                         @"bbw":[NSNumber numberWithInt:60],
-                         @"bbh":[NSNumber numberWithInt:50]
+    return @{@"name":@"pepper"
                          };
 };
 #define pepper makePepper()
 
 NSDictionary * (^makeSpaghetti) () = ^() {
-  return @{@"name":@"spaghetti",
-                            @"bbw":[NSNumber numberWithInt:115],
-                            @"bbh":[NSNumber numberWithInt:45]
+  return @{@"name":@"spaghetti"
                             };
 };
 #define spaghetti makeSpaghetti()
 
 NSDictionary * (^makeBaguette) () = ^() {
-  return @{@"name":@"baguette",
-                           @"bbw":[NSNumber numberWithInt:130],
-                           @"bbh":[NSNumber numberWithInt:30]
+  return @{@"name":@"baguette"
                            };
 };
 #define baguette makeBaguette()
 
 NSDictionary * (^makeTomato) () = ^() {
-    return @{@"name":@"tomato",
-                         @"bbw":[NSNumber numberWithInt:45],
-                         @"bbh":[NSNumber numberWithInt:40]
+    return @{@"name":@"tomato"
                          };
 };
 #define tomato makeTomato()
 
 NSDictionary * (^makeOnion) () = ^() {
-    return @{@"name":@"onion",
-                        @"bbw":[NSNumber numberWithInt:45],
-                        @"bbh":[NSNumber numberWithInt:40]
+    return @{@"name":@"onion"
                         };
 };
 #define onion makeOnion()
 
 NSDictionary * (^makeGarlic) () = ^() {
-    return @{@"name":@"garlic",
-                         @"bbw":[NSNumber numberWithInt:50],
-                         @"bbh":[NSNumber numberWithInt:45]
+    return @{@"name":@"garlic"
                          };
 };
 #define garlic makeGarlic()
 
 NSDictionary * (^makeButter) () = ^() {
-    return @{@"name":@"butter",
-                         @"bbw":[NSNumber numberWithInt:50],
-                         @"bbh":[NSNumber numberWithInt:32]
+    return @{@"name":@"butter"
                          };
 };
 #define butter makeButter()
 
 NSDictionary * (^makeOliveOil) () = ^() {
-    return @{@"name":@"olive_oil",
-                           @"bbw":[NSNumber numberWithInt:31],
-                           @"bbh":[NSNumber numberWithInt:82]
+    return @{@"name":@"olive_oil"
                            };
 };
 #define oliveOil makeOliveOil()
 
 /*
 NSDictionary * (^makeBV) () = ^() {
-    return @{@"name":@"vinegar",
-                            @"bbw":[NSNumber numberWithInt:57],
-                            @"bbh":[NSNumber numberWithInt:65]
+    return @{@"name":@"vinegar"
                             };
  };
  #define vinegar makeBV()
  */
 
 NSDictionary * (^makeStrawberry) () = ^() {
-  return @{@"name":@"strawberry",
-                             @"bbw":[NSNumber numberWithInt:40],
-                             @"bbh":[NSNumber numberWithInt:35]
+  return @{@"name":@"strawberry"
                              };
 };
 #define strawberry makeStrawberry()
 
 NSDictionary * (^makeVE) () = ^() {
-    return @{@"name":@"vanilla_extract",
-                                 @"bbw":[NSNumber numberWithInt:25],
-                                 @"bbh":[NSNumber numberWithInt:45]
+    return @{@"name":@"vanilla_extract"
                                  };
 };
 #define vanillaExtract makeVE()
 
 NSDictionary * (^makeEgg) () = ^() {
-  return @{@"name":@"egg",
-                      @"bbw":[NSNumber numberWithInt:25],
-                      @"bbh":[NSNumber numberWithInt:30]
+  return @{@"name":@"egg"
                       };
 };
 #define egg makeEgg()
 
 NSDictionary * (^makeFlour) () = ^() {
-  return @{@"name":@"flour",
-                        @"bbw":[NSNumber numberWithInt:45],
-                        @"bbh":[NSNumber numberWithInt:50]
+  return @{@"name":@"flour"
                         };
 };
 #define flour makeFlour()
 
 NSDictionary * (^makeSugar) () = ^() {
-  return @{@"name":@"sugar_bag",
-                        @"bbw":[NSNumber numberWithInt:45],
-                        @"bbh":[NSNumber numberWithInt:50]
+  return @{@"name":@"sugar_bag"
                         };
 };
 #define sugar makeSugar()
 
 NSDictionary * (^makeMilk) () = ^() {
-  return @{@"name":@"milk",
-                       @"bbw":[NSNumber numberWithInt:31],
-                       @"bbh":[NSNumber numberWithInt:53]
+  return @{@"name":@"milk"
                        };
 };
 #define milk makeMilk()

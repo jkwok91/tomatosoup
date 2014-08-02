@@ -8,22 +8,12 @@
 
 #import "Drop.h"
 
-@implementation Drop{
-    CCSprite *_image;
-}
+@implementation Drop
 
-- (id)initWithName:(NSString *)name andW:(int)w andH:(int)h {
-    if (self = [super init]) {
+- (id)initWithName:(NSString *)name {
+    self = (Drop *)[CCBReader load:[NSString stringWithFormat:@"Items/%@",name]];
+    if (self) {
         self.fileName = name;
-        self.bbWidth = w;
-        self.bbHeight = h;
-        _image = [CCSprite spriteWithImageNamed:[NSString stringWithFormat:@"Assets/%@.png",self.fileName]];
-        _image.anchorPoint = ccp(0,0);
-        [self addChild:_image];
-        self.contentSize = CGSizeMake(self.bbWidth,self.bbHeight);
-        double radius = 0.5*(pow((pow(self.bbWidth,2)+pow(self.bbHeight,2)),0.5));
-        self.anchorPoint = ccp(0.5,0.5);
-        self.physicsBody = [CCPhysicsBody bodyWithCircleOfRadius:radius andCenter:ccp(0.5f, 0.5f)];
     }
     return self;
 }

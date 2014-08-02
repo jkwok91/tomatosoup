@@ -66,6 +66,7 @@ static int course = 0;
 }
 
 - (void)didLoadFromCCB {
+    _physicsNode.debugDraw = YES;
     _statusLabel.string = [NSString stringWithFormat:@"You're attempting to make %@ (course #%i)",_recipeName,course+1];
     //put a bunch of drops in the array and also on screen
     int numDrops = arc4random()%30+30;
@@ -81,9 +82,7 @@ static int course = 0;
     int rand = arc4random()%[arr count];
     NSDictionary *dict = arr[rand];
     NSString *fileName = [dict valueForKey:@"name"];
-    int w = [[dict valueForKey:@"bbw"] intValue];
-    int h = [[dict valueForKey:@"bbh"] intValue];
-    return [[Drop alloc] initWithName:fileName andW:w andH:h];
+    return [[Drop alloc] initWithName:fileName];
 }
 
 - (Drop *)generateDrop {
@@ -132,8 +131,6 @@ static int course = 0;
 }
 
 - (void)update:(CCTime)delta {
-    // decrement timer
-    
     // view score
     _scoreLabel.string = [NSString stringWithFormat:@"%i", self.points];
     
