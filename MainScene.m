@@ -66,7 +66,7 @@ static int course = 0;
 }
 
 - (void)didLoadFromCCB {
-    _physicsNode.debugDraw = YES;
+    //_physicsNode.debugDraw = YES;
     _statusLabel.string = [NSString stringWithFormat:@"You're attempting to make %@ (course #%i)",_recipeName,course+1];
     //put a bunch of drops in the array and also on screen
     int numDrops = arc4random()%30+30;
