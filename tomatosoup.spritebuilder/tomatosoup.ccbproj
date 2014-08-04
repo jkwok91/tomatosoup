@@ -85,7 +85,27 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
+		<key>Assets/baguette.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/bakingPan.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/baking_pan.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/basil.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/bowl.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>
@@ -115,7 +135,52 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
+		<key>Assets/egg.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/flour.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/garlic.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/milk.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/moldyStrawberry.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/moldy_bread.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/moldy_strawberry.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/olive_oil.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/onion.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/oregano.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>
@@ -135,7 +200,27 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
+		<key>Assets/spaghetti.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/strawberry.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/sugar_bag.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Assets/tomato.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Assets/vanilla_extract.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>
