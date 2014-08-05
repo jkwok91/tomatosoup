@@ -31,9 +31,8 @@
 }
 
 - (void)restart {
-    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
     CCScene *nextScene = [CCScene node];
-    [nextScene addChild:mainScene];
+    [nextScene addChild:[CCBReader loadAsScene:@"MainScene"]];
     [[CCDirector sharedDirector] replaceScene:nextScene];
 }
 

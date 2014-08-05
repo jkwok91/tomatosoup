@@ -96,8 +96,8 @@
 }
 
 - (void)endGame {
-    GameOverScene *nextScene = (GameOverScene *)[CCBReader load:@"GameOverScene"];
-    nextScene.finalScore = self.points;
+    CCScene *nextScene = [CCScene node];
+    [nextScene addChild:[CCBReader loadAsScene:@"GameOverScene"]];
     [[CCDirector sharedDirector] replaceScene:nextScene];
 }
 
