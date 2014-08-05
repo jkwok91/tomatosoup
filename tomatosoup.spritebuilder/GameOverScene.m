@@ -117,8 +117,8 @@
 }
 
 - (void)showCredits {
-    _creditsButton.visible = NO;
-    _creditsLabel.visible = YES;
+    NSURL *url = [NSURL URLWithString:@"www.jessicakwok.com/tomatosoup.html"];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 
