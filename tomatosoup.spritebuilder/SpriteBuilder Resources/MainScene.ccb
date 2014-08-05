@@ -170,10 +170,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>150</real>
+							<real>0.46875</real>
 							<real>372</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>

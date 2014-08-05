@@ -245,8 +245,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -280,10 +278,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>191</real>
+							<real>0.59687501192092896</real>
 							<real>388</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -487,10 +485,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>186</real>
+							<real>0.58125001192092896</real>
 							<real>338</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -694,10 +692,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>66</real>
+							<real>0.20624999701976776</real>
 							<real>380</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -791,10 +789,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>67</real>
+							<real>0.20937499403953552</real>
 							<real>336</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -888,10 +886,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>56</real>
+							<real>0.17499999701976776</real>
 							<real>294</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -977,10 +975,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>194</real>
+							<real>0.60624998807907104</real>
 							<real>296</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1184,10 +1182,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>232</real>
+							<real>0.72500002384185791</real>
 							<real>193</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1292,10 +1290,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>65</real>
+							<real>0.203125</real>
 							<real>251</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1422,10 +1420,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>197</real>
+							<real>0.61562502384185791</real>
 							<real>249</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1632,10 +1630,10 @@ This does not belong in tomato soup.</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>116</real>
+							<real>0.36250001192092896</real>
 							<real>190</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -2132,6 +2130,8 @@ This does not belong in tomato soup.</string>
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
