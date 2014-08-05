@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>5</integer>
+	<integer>4</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -41,7 +41,7 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>4</integer>
+				<integer>3</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -49,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>tomato</string>
+				<string>moldyStrawberry</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/tomato.png</string>
+							<string>Assets/moldyStrawberry.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -130,7 +130,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>NeutralDrop</string>
+		<string>Drop</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -152,7 +152,7 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>22.5</real>
+			<real>25</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -164,8 +164,8 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>22.5</real>
-					<real>20</real>
+					<real>25</real>
+					<real>25</real>
 				</array>
 			</array>
 			<key>polygons</key>
@@ -202,8 +202,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>45</real>
-					<real>40</real>
+					<real>50</real>
+					<real>50</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>

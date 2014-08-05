@@ -11,40 +11,33 @@
 @implementation GameOverScene{
     CCLabelTTF *_resultLabel;
     CCLabelTTF *_successLabel;
-    CCLabelTTF *_creditsLabel;
-    CCButton *_creditsButton;
 }
 
 - (void)onEnter {
     [super onEnter];
-    _creditsLabel.visible = NO;
-    _creditsButton.visible = NO;
     NSString *resultString;
     NSString *successString = @"SUCCESS";
     if (self.finalScore < 0) {
         resultString = @"Your soup is not edible";
         successString = @"FAILED";
-        _creditsButton.visible = NO;
     } else if (self.finalScore < 2) {
-        resultString = @"Your soup is just tomato water";
+        resultString = (arc4random()%2==0) ? @"Your soup is just tomato water" : @"Your soup lacks a certain je ne sais quoi";
         successString = @"FAILED";
     } else {
         resultString = @"It appears that you made soup! Yum";
-        _creditsButton.visible = YES;
     }
     _resultLabel.string = resultString;
     _successLabel.string = successString;
 }
 
 - (void)restart {
-    CCScene *nextScene = [CCBReader loadAsScene:@"MainScene"];
+    CCScene *nextScene = [CCScene node];
+    [nextScene addChild:[CCBReader loadAsScene:@"MainScene"]];
     [[CCDirector sharedDirector] replaceScene:nextScene];
 }
 
 - (void)showCredits {
-    _creditsButton.visible = NO;
-    _creditsLabel.visible = YES;
-    _creditsLabel.string = @"I could not have done this without MGWU, Daniel Haaser, Zach Barryte, Eric Braen, Jack Vittimberga, Frank Navarro-Velasco, Hans Yadav, and Phillip Ou. With love to Tala Huhe, Mike Comella, Nathan Malkin, Emily Phillips, and Misha Bhandari.";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.jessicakwok.com/tomatosoup.html"]];
 }
 
 

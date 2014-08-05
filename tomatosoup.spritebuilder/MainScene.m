@@ -9,11 +9,7 @@
 
 #import "MainScene.h"
 #import "GameOverScene.h"
-#import "MoldyDrop.h"
-#import "ResetDrop.h"
-#import "FractionalDrop.h"
-#import "NeutralDrop.h"
-#import "DoubleDrop.h"
+#import "Drop.h"
 
 @implementation MainScene {
     // array to keep track of what drops are on screen
@@ -39,7 +35,7 @@
     int numDrops = arc4random()%30+50;
     for (int i = 0; i < numDrops; i++) {
         Drop *d = [self generateDrop];
-        d.position = ccp(100+i,250+2*i);
+        d.position = ccp(100+i,250+2*i); //magik numbaaazzz
         [_drops addObject:d];
         [_physicsNode addChild:d];
     }
@@ -49,19 +45,24 @@
     Drop *d;
     int randomizer = arc4random()%40;
     if (randomizer < 18) { // 45% chance of creating a neutral drop
-        d = (NeutralDrop *)[CCBReader load:@"gems/gem1x"];
+        d = (Drop *)[CCBReader load:@"gems/gem1x"];
+        d.multiplier = 1.01;
     }
     else if (randomizer < 21) { // 7.5% chance of creating a double drop
-        d = (DoubleDrop *)[CCBReader load:@"gems/gem2x"];
+        d = (Drop *)[CCBReader load:@"gems/gem2x"];
+        d.multiplier = 2;
     }
     else if (randomizer < 29) { // 20% chance of creating a fractional drop
-        d = (FractionalDrop *)[CCBReader load:@"gems/gem1-4x"];
+        d = (Drop *)[CCBReader load:@"gems/gem1-4x"];
+        d.multiplier = (arc4random()%2 == 0) ? 0.75 : 1.25;
     }
     else if (randomizer < 39) { // 25% chance of creating a moldy drop
-        d = (MoldyDrop *)[CCBReader load:@"gems/gem-1x"];
+        d = (Drop *)[CCBReader load:@"gems/gem-1x"];
+        d.multiplier = -1;
     }
     else { // 2.5% chance of creating a reset drop
-        d = (ResetDrop *)[CCBReader load:@"gems/gem0x"];
+        d = (Drop *)[CCBReader load:@"gems/gem0x"];
+        d.multiplier = 0;
     }
     return d;
 }
