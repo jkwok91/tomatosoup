@@ -73,11 +73,11 @@
     //   "letterbox" (the default)
     //   "native"
     //   "stretch"
-    //"SPLASH_SCREEN_TYPE": "letterbox",
+    "SPLASH_SCREEN_TYPE": "letterbox",
 
     // Path to the image to use for the app's icon.
     // Usually something like "./Icon.png".
-    // "ICON": "",
+    "ICON": "./Icon.png",
 
     // A regular expression to determine which assets
     // should be compressed when building the final app.

@@ -10,6 +10,6 @@
 
 @interface GameOverScene : CCScene
 
-@property (nonatomic,assign) float finalScore;
+@property (assign) float finalScore;
 
 @end

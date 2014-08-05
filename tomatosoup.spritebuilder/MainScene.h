@@ -12,5 +12,7 @@
 
 @property (assign) int timeLeft;
 @property (assign) float points;
+// array to keep track of what drops are on screen
+@property (nonatomic,strong) NSMutableArray *drops;
 
 @end

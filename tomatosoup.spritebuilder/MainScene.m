@@ -12,8 +12,6 @@
 #import "Drop.h"
 
 @implementation MainScene {
-    // array to keep track of what drops are on screen
-    NSMutableArray *_drops;
     // physics
     CCPhysicsNode *_physicsNode;
     // keep track of score
@@ -25,7 +23,7 @@
     if (self = [super init]) {
         self.timeLeft = 5;
         self.points = 1;
-        _drops = [NSMutableArray array];
+        self.drops = [NSMutableArray array];
     }
     return self;
 }
@@ -36,7 +34,7 @@
     for (int i = 0; i < numDrops; i++) {
         Drop *d = [self generateDrop];
         d.position = ccp(100+i,250+2*i); //magik numbaaazzz
-        [_drops addObject:d];
+        [self.drops addObject:d];
         [_physicsNode addChild:d];
     }
 }
@@ -82,14 +80,14 @@
     _scoreLabel.string = [NSString stringWithFormat:@"%f", self.points];
     
     // check which drops have left the screen / generate new ones at top of screen
-    for (int i = [_drops count]-1; i >= 0; i--) {
-        Drop *d = _drops[i];
+    for (int i = [self.drops count]-1; i >= 0; i--) {
+        Drop *d = self.drops[i];
         if (d.position.y < 0) {
             [_physicsNode removeChild:d];
-            [_drops removeObject:d];
+            [self.drops removeObject:d];
             Drop *b = [self generateDrop];
             b.position = ccp(200,500);
-            [_drops addObject:b];
+            [self.drops addObject:b];
             [_physicsNode addChild:b];
         }
     }
@@ -107,15 +105,14 @@
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint touched = [touch locationInNode:self];
     // if touched is a drop, then get that drop's multiplier and apply to score
-    for (int i = [_drops count]-1; i >= 0; i--) {
-        Drop *d = _drops[i];
+    for (int i = [self.drops count]-1; i >= 0; i--) {
+        Drop *d = self.drops[i];
         CGRect bbox = CGRectMake(d.position.x,
                                  d.position.y,
                                  d.contentSize.width,
                                  d.contentSize.height);
         if (CGRectContainsPoint(bbox, touched)) {
             float multiplier = d.multiplier;
-            //NSLog(@"yo you touched a thing with multiplier %f",multiplier);
             // if score is already negative and you clicked on another negative multiplier, it is doubly bad
             // the real life analogy for this is, if you mixed in a bad ingredient, your food is now bad. if you mix in another bad ingredient, your food is worse.
             if (self.points < 0 && multiplier < 0) {
@@ -124,7 +121,7 @@
             self.points *= multiplier;
             if (self.points == 0) { self.points++; }
             [_physicsNode removeChild:d];
-            [_drops removeObject:d];
+            [self.drops removeObject:d];
         }
     }
 }
