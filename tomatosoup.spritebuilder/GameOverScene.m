@@ -14,8 +14,6 @@
     CCLabelTTF *_itemsLabel;
     CCLabelTTF *_resultLabel;
     CCLabelTTF *_successLabel;
-    CCLabelTTF *_creditsLabel;
-    CCButton *_creditsButton;
     CCSprite *_successSprite;
     NSString *_song;
     
@@ -25,8 +23,6 @@
 - (void)onEnter {
     [super onEnter];
     self.viewController = [[UIViewController alloc] init];
-    _creditsLabel.visible = NO;
-    _creditsButton.visible = NO;
     NSString *resultString;
     BOOL success = NO;
     NSString *successString = @"FAILED";
@@ -66,7 +62,6 @@
         _song = @"arpeggio1.mp3";
         CCLOG(@"success! position of sprite is %f,%f",_successSprite.anchorPoint.x,_successSprite.anchorPoint.y);
         _successSprite.spriteFrame = [CCSpriteFrame frameWithImageNamed:[NSString stringWithFormat:@"Assets/completed_%@.png",self.recipe]];
-        _creditsButton.visible = YES;
         _successLabel.visible = NO;
     }
     _itemsLabel.string = [self getAll];
@@ -117,7 +112,7 @@
 }
 
 - (void)showCredits {
-    NSURL *url = [NSURL URLWithString:@"www.jessicakwok.com/tomatosoup.html"];
+    NSURL *url = [NSURL URLWithString:@"http://www.jessicakwok.com/tomatosoup.html"];
     [[UIApplication sharedApplication] openURL:url];
 }
 

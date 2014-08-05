@@ -130,7 +130,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>Drop</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

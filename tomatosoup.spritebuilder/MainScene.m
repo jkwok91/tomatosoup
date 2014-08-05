@@ -124,7 +124,8 @@ static int course = 0;
 - (void)onEnter {
     [super onEnter];
     _audio = [OALSimpleAudio sharedInstance];
-    [_audio preloadEffect:@"bling.mp3"];
+    [_audio preloadEffect:@"boop.mp3"];
+    [_audio preloadEffect:@"rnrnrn.mp3"];
     
     // accept touches
     self.userInteractionEnabled = YES;
@@ -147,6 +148,10 @@ static int course = 0;
             [_physicsNode addChild:b];
         }
     }
+}
+
+- (void)onExit {
+    
 }
 
 - (void)endGame {
@@ -172,11 +177,15 @@ static int course = 0;
                                  d.contentSize.width,
                                  d.contentSize.height);
         if (CGRectContainsPoint(bbox, touched)) {
+            NSString *myEffect = @"boop.mp3";
             float multiplier = d.multiplier;
             // if score is already negative and you clicked on another negative multiplier, it is doubly bad
             // the real life analogy for this is, if you mixed in a bad ingredient, your food is now bad. if you mix in another bad ingredient, your food is worse.
+            if (multiplier < 0) {
+                myEffect = @"rnrnrn.mp3";
+            }
             if (self.points < 0 && multiplier < 0) {
-                multiplier *= -2;
+                multiplier = 2;
             }
             if (multiplier == 0) {
                 self.points = 1;
@@ -196,7 +205,7 @@ static int course = 0;
             CCSprite *poof = (CCSprite *)[CCBReader load:@"spark"];
             [self addChild:poof];
             poof.position = ccp(d.position.x,d.position.y);
-            [_audio playEffect:@"bling.mp3"];
+            [_audio playEffect:myEffect];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self removeChild:poof];
             });

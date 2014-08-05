@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C5798BA1989D980004797BF /* bling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C5798B91989D980004797BF /* bling.mp3 */; };
 		4C5798BC1989E027004797BF /* worstNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C5798BB1989E027004797BF /* worstNoise.mp3 */; };
 		4C5798BE1989E173004797BF /* arpeggio1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C5798BD1989E173004797BF /* arpeggio1.mp3 */; };
 		4C5798C0198A0779004797BF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5798BF198A0779004797BF /* Social.framework */; };
+		4C579937199144F7004797BF /* boop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C579935199144F7004797BF /* boop.mp3 */; };
+		4C579938199144F7004797BF /* rnrnrn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C579936199144F7004797BF /* rnrnrn.mp3 */; };
 		4CD1C37B197E206800E14FE8 /* Drop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C36D197E206800E14FE8 /* Drop.m */; };
 		4CD1C37D197E206800E14FE8 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C371197E206800E14FE8 /* GameOverScene.m */; };
 		4CD1C381197E206800E14FE8 /* TutorialScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C379197E206800E14FE8 /* TutorialScene.m */; };
@@ -70,10 +71,11 @@
 		4C5798B1198723A2004797BF /* Recipes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recipes.h; sourceTree = "<group>"; };
 		4C5798B219872A98004797BF /* Cookware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cookware.h; sourceTree = "<group>"; };
 		4C5798B319872AD1004797BF /* Trash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trash.h; sourceTree = "<group>"; };
-		4C5798B91989D980004797BF /* bling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bling.mp3; sourceTree = "<group>"; };
 		4C5798BB1989E027004797BF /* worstNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = worstNoise.mp3; sourceTree = "<group>"; };
 		4C5798BD1989E173004797BF /* arpeggio1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arpeggio1.mp3; sourceTree = "<group>"; };
 		4C5798BF198A0779004797BF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4C579935199144F7004797BF /* boop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boop.mp3; path = ../../boop.mp3; sourceTree = "<group>"; };
+		4C579936199144F7004797BF /* rnrnrn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rnrnrn.mp3; path = ../../rnrnrn.mp3; sourceTree = "<group>"; };
 		4CD1C36C197E206800E14FE8 /* Drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drop.h; sourceTree = "<group>"; };
 		4CD1C36D197E206800E14FE8 /* Drop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drop.m; sourceTree = "<group>"; };
 		4CD1C370197E206800E14FE8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
@@ -245,8 +247,9 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4C5798B91989D980004797BF /* bling.mp3 */,
 				4C5798BD1989E173004797BF /* arpeggio1.mp3 */,
+				4C579935199144F7004797BF /* boop.mp3 */,
+				4C579936199144F7004797BF /* rnrnrn.mp3 */,
 				4C5798BB1989E027004797BF /* worstNoise.mp3 */,
 				B73789911807667A0076A88C /* Icons */,
 				B737893A180761570076A88C /* Published-iOS */,
@@ -351,7 +354,7 @@
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
-				4C5798BA1989D980004797BF /* bling.mp3 in Resources */,
+				4C579937199144F7004797BF /* boop.mp3 in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				4CD1C395197E229E00E14FE8 /* tomatosoup154x154.png in Resources */,
 				4CD1C392197E229E00E14FE8 /* tomatosoup114x114.png in Resources */,
@@ -361,6 +364,7 @@
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				4CD1C393197E229E00E14FE8 /* tomatosoup120x120.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
+				4C579938199144F7004797BF /* rnrnrn.mp3 in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				4CD1C390197E229E00E14FE8 /* tomatosoup72x72.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
