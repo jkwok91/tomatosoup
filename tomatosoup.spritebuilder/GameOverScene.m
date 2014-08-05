@@ -21,7 +21,12 @@
         resultString = @"Your soup is not edible";
         successString = @"FAILED";
     } else if (self.finalScore < 2) {
-        resultString = (arc4random()%2==0) ? @"Your soup is just tomato water" : @"Your soup lacks a certain je ne sais quoi";
+        // failed
+        if (arc4random()%2==0) {
+            resultString = @"Your soup is just tomato water";
+        } else {
+            resultString = @"Your soup lacks a certain je ne sais quoi";
+        }
         successString = @"FAILED";
     } else {
         resultString = @"It appears that you made soup! Yum";

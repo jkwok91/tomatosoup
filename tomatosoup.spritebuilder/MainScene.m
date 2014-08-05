@@ -96,9 +96,12 @@
 }
 
 - (void)endGame {
+    GameOverScene *gameOverScene = (GameOverScene *)[CCBReader load:@"GameOverScene"];
+    gameOverScene.finalScore = self.points;
     CCScene *nextScene = [CCScene node];
-    [nextScene addChild:[CCBReader loadAsScene:@"GameOverScene"]];
+    [nextScene addChild:gameOverScene];
     [[CCDirector sharedDirector] replaceScene:nextScene];
+
 }
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {

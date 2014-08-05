@@ -1,8 +1,8 @@
 {
     "assets": [
         {
-            "asset": "../../../../var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/TARGET_BUILD_DIR/libcocos2d.a", 
-            "target": "../../../../../../../../Users/jessica/MGWU/tomatosoup.spritebuilder/normal"
+            "asset": "../../../../../var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/TARGET_BUILD_DIR/libcocos2d.a", 
+            "target": "../../../../../../../../Users/jessica/MGWU/tomatoSoup/tomatosoup.spritebuilder/normal"
         }
     ], 
     "config": {}, 
@@ -3174,7 +3174,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -3226,10 +3226,6 @@
             "type": "I"
         }, 
         {
-            "header_path": "cocos2d-ui-tests/SpriteBuilder", 
-            "type": "I"
-        }, 
-        {
             "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder", 
             "type": "I"
         }, 
@@ -3278,10 +3274,6 @@
             "type": "I"
         }, 
         {
-            "header_path": "cocos2d-ui-tests/SpriteBuilder/Resources", 
-            "type": "I"
-        }, 
-        {
             "header_path": "cocos2d-ui-tests/TestGraphics.spritebuilder/Resources", 
             "type": "I"
         }, 
@@ -3323,14 +3315,6 @@
         }, 
         {
             "header_path": "cocos2d-ui-tests/Resources-shared/Tiles/resources-tablethd", 
-            "type": "I"
-        }, 
-        {
-            "header_path": "cocos2d-ui-tests/SpriteBuilder/Resources/Interface", 
-            "type": "I"
-        }, 
-        {
-            "header_path": "cocos2d-ui-tests/SpriteBuilder/Resources/resources-auto", 
             "type": "I"
         }, 
         {
@@ -3394,11 +3378,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 

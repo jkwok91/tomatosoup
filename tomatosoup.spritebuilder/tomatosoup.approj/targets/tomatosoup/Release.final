@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
+            "asset": "../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
             "target": "ResourceRules.plist"
         }, 
         {
@@ -369,40 +369,16 @@
             "target": "Published-iOS/gems/gem0x.ccbi"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/gems/gem1-16x.ccbi", 
-            "target": "Published-iOS/gems/gem1-16x.ccbi"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/gems/gem1-4x.ccbi", 
             "target": "Published-iOS/gems/gem1-4x.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/gems/gem1-8x.ccbi", 
-            "target": "Published-iOS/gems/gem1-8x.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/gems/gem1x.ccbi", 
             "target": "Published-iOS/gems/gem1x.ccbi"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/gems/gem1x2.ccbi", 
-            "target": "Published-iOS/gems/gem1x2.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/gems/gem1x3.ccbi", 
-            "target": "Published-iOS/gems/gem1x3.ccbi"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/gems/gem2x.ccbi", 
             "target": "Published-iOS/gems/gem2x.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/gems/gem2x2.ccbi", 
-            "target": "Published-iOS/gems/gem2x2.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/gems/gem4x.ccbi", 
-            "target": "Published-iOS/gems/gem4x.ccbi"
         }, 
         {
             "asset": "Source/Resources/Icons/Settings@2x.png", 
@@ -519,20 +495,10 @@
                     "prefix": "Source/", 
                     "suffix": "AppDelegate.h"
                 }, 
-                "DoubleDrop.h": {
-                    "key": "DoubleDrop.h", 
-                    "prefix": "./", 
-                    "suffix": "DoubleDrop.h"
-                }, 
                 "Drop.h": {
                     "key": "Drop.h", 
                     "prefix": "./", 
                     "suffix": "Drop.h"
-                }, 
-                "FractionalDrop.h": {
-                    "key": "FractionalDrop.h", 
-                    "prefix": "./", 
-                    "suffix": "FractionalDrop.h"
                 }, 
                 "GameOverScene.h": {
                     "key": "GameOverScene.h", 
@@ -544,25 +510,10 @@
                     "prefix": "./", 
                     "suffix": "MainScene.h"
                 }, 
-                "MoldyDrop.h": {
-                    "key": "MoldyDrop.h", 
-                    "prefix": "./", 
-                    "suffix": "MoldyDrop.h"
-                }, 
-                "NeutralDrop.h": {
-                    "key": "NeutralDrop.h", 
-                    "prefix": "./", 
-                    "suffix": "NeutralDrop.h"
-                }, 
                 "Prefix.pch": {
                     "key": "Prefix.pch", 
                     "prefix": "Source/", 
                     "suffix": "Prefix.pch"
-                }, 
-                "ResetDrop.h": {
-                    "key": "ResetDrop.h", 
-                    "prefix": "./", 
-                    "suffix": "ResetDrop.h"
                 }, 
                 "TutorialScene.h": {
                     "key": "TutorialScene.h", 
@@ -573,7 +524,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -641,11 +592,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpjNcVjq/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -684,21 +635,7 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
-            "source": "DoubleDrop.m"
-        }, 
-        {
-            "defines": {}, 
-            "flags": [], 
-            "header_paths": [], 
-            "language": "objc", 
             "source": "Drop.m"
-        }, 
-        {
-            "defines": {}, 
-            "flags": [], 
-            "header_paths": [], 
-            "language": "objc", 
-            "source": "FractionalDrop.m"
         }, 
         {
             "defines": {}, 
@@ -713,27 +650,6 @@
             "header_paths": [], 
             "language": "objc", 
             "source": "MainScene.m"
-        }, 
-        {
-            "defines": {}, 
-            "flags": [], 
-            "header_paths": [], 
-            "language": "objc", 
-            "source": "MoldyDrop.m"
-        }, 
-        {
-            "defines": {}, 
-            "flags": [], 
-            "header_paths": [], 
-            "language": "objc", 
-            "source": "NeutralDrop.m"
-        }, 
-        {
-            "defines": {}, 
-            "flags": [], 
-            "header_paths": [], 
-            "language": "objc", 
-            "source": "ResetDrop.m"
         }, 
         {
             "defines": {}, 
