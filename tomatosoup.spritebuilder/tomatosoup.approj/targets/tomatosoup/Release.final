@@ -417,8 +417,10 @@
             "portrait", 
             "opengles2"
         ], 
+        "ICON": "./Icon.png", 
         "ICU_CONFIG": "normal", 
         "LONG_VERSION": "1.0", 
+        "SPLASH_SCREEN_TYPE": "letterbox", 
         "TEMPLATE_VALUES": {
             "EXECUTABLE_NAME": "tomatosoup", 
             "PRODUCT_NAME": "tomatosoup"
