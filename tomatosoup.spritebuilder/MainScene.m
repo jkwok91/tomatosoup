@@ -90,31 +90,31 @@ static int course = 0;
     Drop *d;
     int randomizer = arc4random()%40;
     if (randomizer < 18) { // 45% chance of creating a neutral drop
-        //NSLog(@"generating a double drop");
+        NSLog(@"generating a double drop");
         fromThese = [_currentRecipe valueForKey:@"bases"];
         d = [self makeDrop:fromThese];
         d.multiplier = 2;
     }
     else if (randomizer < 20) { // 5% chance of creating a double drop
-        //NSLog(@"generating a triple drop");
+        NSLog(@"generating a triple drop");
         fromThese = [_currentRecipe valueForKey:@"seasonings"];
         d = [self makeDrop:fromThese];
         d.multiplier = 3;
     }
     else if (randomizer < 21) { // 2.5% chance of creating a triple drop
-        //NSLog(@"generating a quintuple drop");
+        NSLog(@"generating a quintuple drop");
         fromThese = [_currentRecipe valueForKey:@"extras"];
         d = [self makeDrop:fromThese];
         d.multiplier = 5;
     }
     else if (randomizer < 39) { // 45% chance of creating a moldy drop
-        //NSLog(@"generating a moldy drop");
+        NSLog(@"generating a moldy drop");
         d = [self makeDrop:rotten];
         [[d.children objectAtIndex:0] setColor:[CCColor colorWithRed:.541f green:.5607f blue:.768f]];
         d.multiplier = -1;
     }
     else { // 2.5% chance of creating a reset drop
-        //NSLog(@"generating a reset drop");
+        NSLog(@"generating a reset drop");
         d = [self makeDrop:[_currentRecipe valueForKey:@"reset"]];
         d.multiplier = 0;
     }
