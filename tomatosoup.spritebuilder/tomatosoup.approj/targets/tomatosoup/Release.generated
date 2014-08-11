@@ -75,11 +75,15 @@
         {
             "asset": "Source/Resources/Icons/iPad-old.png", 
             "target": "iPad-old.png"
+        }, 
+        {
+            "asset": "tomatosoup/Images.xcassets", 
+            "target": null
         }
     ], 
     "config": {
         "APPLICATION_FULL_NAME": "tomatosoup", 
-        "APPLICATION_IDENTIFIER": "com.apportable.tomatosoup", 
+        "APPLICATION_IDENTIFIER": "com.coldbeans.tomatosoup", 
         "APPLICATION_NAME": "tomatosoup", 
         "LONG_VERSION": "1.0", 
         "TEMPLATE_VALUES": {
@@ -90,7 +94,7 @@
     "defines": {
         "NDEBUG": 1, 
         "NS_BLOCK_ASSERTIONS": 1, 
-        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 70000
     }, 
     "deps": [
         "UIKit", 
@@ -187,7 +191,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpE7XAWH/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -255,11 +259,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpE7XAWH/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpE7XAWH/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 

@@ -440,7 +440,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jessica Kwok (TYAZ8MVTTX)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -461,7 +461,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = tomatosoup;
-				PROVISIONING_PROFILE = "D0190417-620E-479A-82FE-5BF5C154209A";
+				PROVISIONING_PROFILE = "20D0A469-7CC4-4BD8-8AFC-5ED0D4F8AC1B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -475,7 +475,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jessica Kwok (TYAZ8MVTTX)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
@@ -494,7 +494,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = tomatosoup;
-				PROVISIONING_PROFILE = "D0190417-620E-479A-82FE-5BF5C154209A";
+				PROVISIONING_PROFILE = "20D0A469-7CC4-4BD8-8AFC-5ED0D4F8AC1B";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../../var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/TARGET_BUILD_DIR/libcocos2d.a", 
+            "asset": "../../../../../var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpE7XAWH/TARGET_BUILD_DIR/libcocos2d.a", 
             "target": "../../../../../../../../Users/jessica/MGWU/tomatoSoup/tomatosoup.spritebuilder/normal"
         }
     ], 
@@ -3174,7 +3174,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpE7XAWH/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -3378,11 +3378,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpE7XAWH/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpuJ383R/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/1b/19rtyngj7m32b3gj8hk7_gmr0000gn/T/tmpE7XAWH/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
